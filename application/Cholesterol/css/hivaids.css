@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Noto+Serif+Display&family=Poppins&family=Red+Hat+Display&family=Roboto&family=Staatliches&display=swap");
+
+:root {
+  /* COLORS*/
+
+  /* BLACK to White*/
+  --primary-black: #0303030;
+  --secondary-black: #1d1d1d;
+  --third-black: #282828;
+  --fourth-black: #a0a0a0;
+  --fifth-black: #c5c5c5;
+  --sixth-black: #e6e6e6;
+
+  /* WHITE */
+  --primary-white: #fff;
+  --body-bg-white: #f7fbff;
+  --blue-white: #deeeff;
+
+  /* RED */
+  --primary-red: #ff2052;
+  --secondary-red: #ff436d;
+  --third-red: #ff6689;
+  --fourth-red: #ffbfcd;
+  --fifth-red: #ffdbe3;
+
+  /* BLUE */
+  --primary-blue: #4285f4;
+  --secondary-blue: #5a98ff;
+  --third-blue: #71a6ff;
+  --fourth-blue: #c3daff;
+
+  /* CONSISTENT FONT FAMILY */
+  --font-inter: "Inter", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --font-noto: "Noto Serif Display", serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-redhat: "Red Hat Display", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-staatliches: "Staatliches", cursive;
+
+  /* CONSISTENT FONT SIZE */
+  --fontsz-display-61px: 61px;
+  /* FOR PLAYFAIR DISPLAY */
+  --fontsz-display-49px: 49px;
+  /* FOR PLAYFAIR DISPLAY */
+  --fontsz-subtitle-39px: 39px;
+  /* FOR PLAYFAIR DISPLAY */
+  --fontsz-subtitle-31px: 31px;
+  /* FOR INTER atau LATO*/
+  --fontsz-subtitle-24px: 24px;
+  /* FOR INTER  atau kalo buat logo pake staatliches*/
+  --fontsz-article-16px: 16px;
+  /* FOR LATO */
+  --fontsz-article-13px: 13px;
+  /* FOR LATO */
+
+  /* BORDER RADIUS */
+  --border-radius: 10px;
+  --border-radius-button: 5px;
+  /* tergantung size button */
+  --border-radius-input: 6px;
+}
+
+#hero {
+  width: 100%;
+  height: 80vh;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 150px;
+  color: var(--primary-white);
+  transition: all ease 0.5s;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../src/cholesterol.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
+}
+
+#hero h1 {
+  width: 900px;
+  font-family: var(--font-staatliches);
+  font-size: 82px;
+}
+
+#hero p {
+  width: 700px;
+}
+
+#hero a {
+  margin-top: 20px;
+  padding: 10px 24px;
+  background-color: var(--secondary-red);
+  border-radius: 4px;
+  color: var(--primary-white);
+  transition: all ease 0.5s;
+}
+
+#hero a:hover {
+  background-color: var(--primary-red);
+  color: var(--sixth-black);
+  transform: translateY(3px);
+}
+
+/* HERO IMAGE */
+#hero-image {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 100px 0;
+}
+
+#hero-image h1 {
+  font-family: var(--font-redhat);
+  font-size: 72px;
+  color: var(--primary-white);
+}
+
+/* DEFINITION */
+#definition {
+  width: 100%;
+}
+
+#definition .definiton-hivaids {
+  display: flex;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+#definition .definiton-hivaids h1 {
+  width: 40%;
+  font-size: 61px;
+  font-family: var(--font-staatliches);
+  padding-right: 20px;
+}
+
+.blue {
+  color: var(--primary-blue);
+  font-family: var(--font-staatliches);
+}
+
+/* span {
+  color: var(--primary-red);
+  font-family: var(--font-staatliches);
+} */
+
+#definition .definiton-hivaids article {
+  width: 60%;
+  padding-left: 40px;
+}
+
+#definition .definiton-hivaids article p span {
+  font-size: 24px;
+}
+
+.line {
+  border-bottom: 1px solid #ddd;
+}
+
+/* FILTER FEATURE */
+#detail-definition .ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+#detail-definition .ul div {
+  display: flex;
+}
+
+#detail-definition .ul li {
+  list-style: none;
+  padding: 12px 15px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#detail-definition .ul li.active {
+  border-bottom: 3px solid var(--primary-red);
+  background-color: var(--fifth-red);
+  color: var(--secondary-red);
+}
+
+#detail-definition .ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+#detail-definition .detail-definition-content .itemBox {
+  width: 100%;
+  height: max-content;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#detail-definition .detail-definition-content .itemBox .group-left {
+  width: 100%;
+  height: max-content;
+}
+
+#detail-definition .detail-definition-content .itemBox .group-right {
+  width: 40%;
+  height: max-content;
+  writing-mode: vertical-lr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#detail-definition .detail-definition-content .itemBox .group-right div {
+  font-size: 96px;
+  color: var(--blue-white);
+  height: 100%;
+  font-family: var(--font-staatliches);
+}
+
+#detail-definition .detail-definition-content .itemBox img {
+  width: 100%;
+}
+
+#detail-definition .detail-definition-content .itemBox h1 {
+  font-size: 31px;
+  font-family: var(--font-redhat);
+  margin-bottom: 20px;
+}
+
+#detail-definition .detail-definition-content .itemBox p {
+  margin-bottom: 20px;
+}
+
+#detail-definition .detail-definition-content .itemBox.hide {
+  display: none;
+}
+
+.title-detail {
+  margin: 250px 0;
+}
+
+.title-detail h1 {
+  text-transform: uppercase;
+  font-size: 61px;
+  text-align: center;
+  font-family: var(--font-staatliches);
+}
+
+/* conjunction */
+#conjunction {
+  width: 100%;
+  background-color: var(--secondary-red);
+}
+
+#conjunction h1 {
+  margin-top: -10px;
+  padding: 50px 0;
+  color: var(--primary-white);
+  text-align: center;
+  font-size: var(--fontsz-subtitle-24px);
+  text-transform: capitalize;
+}
+
+/* DIAGNOSIS */
+#diagnosis {
+  margin: 250px 0;
+}
+
+#diagnosis h1 {
+  text-transform: uppercase;
+  font-size: 61px;
+  text-align: center;
+  font-family: var(--font-staatliches);
+  margin-bottom: 70px;
+}
+
+.diagnosis-content {
+  width: 100%;
+}
+
+.title-diagnosis {
+  background-color: var(--primary-blue);
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fontsz-subtitle-31px);
+  font-family: var(--font-lato);
+  color: var(--primary-white);
+  text-align: center;
+}
+
+.lists-diagnosis {
+  background-color: var(--third-blue);
+  display: flex;
+  font-size: var(--fontsz-subtitle-24px);
+  font-family: var(--font-lato);
+  color: var(--primary-white);
+}
+
+.lists-diagnosis .number-list-diagnosis {
+  width: 40%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-blue);
+  font-family: var(--font-lato);
+}
+
+.lists-diagnosis .list-article-diagnosis {
+  width: 60%;
+  padding: 50px;
+  font-size: var(--fontsz-article-16px);
+  font-family: var(--font-lato);
+  background-color: var(--f);
+}
+
+.quotes {
+  width: 100%;
+  text-align: center;
+  padding: 200px 0;
+}
+
+.quotes h1 {
+  font-family: var(--font-noto);
+  font-size: var(--fontsz-subtitle-39px);
+  text-transform: capitalize;
+  color: var(--secondary-red);
+}
+
+@media only screen and (max-width: 1200px) {
+  #hero {
+    transition: all ease 0.5s;
+  }
+
+  #hero h1 {
+    transform: scale(0.8);
+  }
+
+  #hero p {
+    transform: scale(0.9);
+  }
+
+  /* HERO IMAGE */
+  #hero-image h1 {
+    transform: scale(0.8);
+  }
+
+  .itemBox {
+    flex-direction: column;
+  }
+
+  .itemBox .group-left {
+    width: 800px;
+  }
+
+  .itemBox .group-right div {
+    display: none;
+  }
+
+  /* DIAGNOSIS */
+  #diagnosis {
+    margin: 250px 0;
+  }
+
+  .diagnosis-content {
+    transform: scale(0.9);
+    flex-direction: column;
+  }
+
+  .title-diagnosis {
+    width: 100%;
+    padding: 50px;
+  }
+
+  .lists-diagnosis {
+    flex-direction: column;
+  }
+
+  .lists-diagnosis .number-list-diagnosis {
+    width: 100%;
+  }
+
+  .lists-diagnosis .list-article-diagnosis {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #hero {
+    transition: all ease 0.5s;
+  }
+
+  #hero h1 {
+    transform: scale(0.7);
+  }
+
+  #hero p {
+    transform: scale(0.9);
+  }
+
+  /* HERO IMAGE */
+
+  #hero-image h1 {
+    transform: scale(0.7);
+  }
+
+  /* DEFINITION */
+  #definition {
+    width: 100%;
+  }
+
+  #definition .definiton-hivaids {
+    flex-direction: column;
+  }
+
+  #definition .definiton-hivaids h1 {
+    text-align: center;
+    width: 100%;
+  }
+
+  #definition .definiton-hivaids article {
+    width: 100%;
+    padding-left: 40px;
+  }
+
+  #definition .definiton-hivaids article p span {
+    font-size: 24px;
+  }
+
+  .itemBox .group-left {
+    width: 100%;
+  }
+}

@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Noto+Serif+Display&family=Poppins&family=Red+Hat+Display&family=Roboto&family=Staatliches&display=swap");
+
+:root {
+  /* COLORS*/
+
+  /* BLACK to White*/
+  --primary-black: #0303030;
+  --secondary-black: #1d1d1d;
+  --third-black: #282828;
+  --fourth-black: #a0a0a0;
+  --fifth-black: #c5c5c5;
+  --sixth-black: #e6e6e6;
+
+  /* WHITE */
+  --primary-white: #fff;
+  --body-bg-white: #f7fbff;
+
+  /* RED */
+  --primary-red: #ff2052;
+  --secondary-red: #ff436d;
+  --third-red: #ff6689;
+  --fourth-red: #ffbfcd;
+
+  /* BLUE */
+  --primary-blue: #4285f4;
+  --secondary-blue: #5a98ff;
+  --third-blue: #71a6ff;
+  --fourth-blue: #c3daff;
+
+  /* CONSISTENT FONT FAMILY */
+  --font-inter: "Inter", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --font-noto: "Noto Serif Display", serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-redhat: "Red Hat Display", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-staatliches: "Staatliches", cursive;
+
+  /* CONSISTENT FONT SIZE */
+  --fontsz-display-61px: 61px; /* FOR PLAYFAIR DISPLAY */
+  --fontsz-display-49px: 49px; /* FOR PLAYFAIR DISPLAY */
+  --fontsz-subtitle-39px: 39px; /* FOR PLAYFAIR DISPLAY */
+  --fontsz-subtitle-31px: 31px; /* FOR INTER atau LATO*/
+  --fontsz-subtitle-24px: 24px; /* FOR INTER  atau kalo buat logo pake staatliches*/
+  --fontsz-article-16px: 16px; /* FOR LATO */
+  --fontsz-article-13px: 13px; /* FOR LATO */
+
+  /* BORDER RADIUS */
+  --border-radius: 10px;
+  --border-radius-button: 5px; /* tergantung size button */
+  --border-radius-input: 6px;
+}
+
+/* NAVBAR */
+#navbar {
+  width: 100%;
+  padding: 12px 0;
+  position: fixed;
+  color: var(--primary-black);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+}
+
+#logo {
+  font-size: 20px;
+  font-family: var(--font-staatliches);
+  color: var(--primary-white);
+}
+
+.ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ul a {
+  color: var(--primary-white);
+  transition: all ease 0.5s;
+}
+
+.ul a:hover {
+  color: var(--primary-black);
+  transform: translateY(-3px);
+}
+
+.ul a.active {
+  color: var(--secondary-red);
+  border-bottom: 1px solid var(--secondary-red);
+}
+
+.ul a.active:hover {
+  color: var(--primary-red);
+  transform: translateY(-3px);
+}
+
+.consultation {
+  padding: 3px 20px;
+  border: 1px solid var(--primary-black);
+  transition: all ease 0.5s;
+  border-radius: 3px;
+}
+
+.consultation:hover {
+  background-color: var(--secondary-black);
+  color: var(--primary-white);
+}
+
+.ham {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 100%;
+  cursor: pointer;
+  display: none;
+  z-index: 99;
+}
+
+.ham i {
+  font-size: 31px;
+  color: #333;
+}
+
+.menu {
+  display: none;
+}
+
+#navbar.nav-colored {
+  background: rgba(45, 47, 47, 0.95);
+  backdrop-filter: blur(40px);
+  color: var(--primary-white);
+}
+
+#navbar.nav-transparent {
+  background-color: transparent;
+  color: var(---black);
+}
+
+#navbar {
+  transition: all ease 0.4s;
+  z-index: 9999;
+  padding: 20px 100px;
+}
+
+/* khusus hamburger menu */
+@media only screen and (max-width: 800px) {
+  .menu {
+    width: 300px;
+    height: 100vh;
+    background: rgba(45, 47, 47, 0.99);
+    transform: translateX(-100%);
+    border-radius: 0 100% 100% 0;
+    transition: all ease 0.9s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+  }
+
+  .menu ul {
+    font-size: 24px;
+    transition: 0.7s;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar .right ul li:nth-child(n-4) {
+    display: none;
+  }
+
+  .navbar .right ul .ham {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}

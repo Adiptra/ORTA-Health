@@ -1,0 +1,632 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Noto+Serif+Display&family=Poppins&family=Red+Hat+Display&family=Roboto&family=Staatliches&display=swap");
+
+:root {
+  /* COLORS*/
+
+  /* BLACK to White*/
+  --primary-black: #0303030;
+  --secondary-black: #1d1d1d;
+  --third-black: #282828;
+  --fourth-black: #a0a0a0;
+  --fifth-black: #c5c5c5;
+  --sixth-black: #e6e6e6;
+
+  /* WHITE */
+  --primary-white: #fff;
+  --body-bg-white: #f7fbff;
+  --blue-white: #deeeff;
+
+  /* RED */
+  --primary-red: #ff2052;
+  --secondary-red: #ff436d;
+  --third-red: #ff6689;
+  --fourth-red: #ffbfcd;
+  --fifth-red: #ffdbe3;
+
+  /* BLUE */
+  --primary-blue: #4285f4;
+  --secondary-blue: #5a98ff;
+  --third-blue: #71a6ff;
+  --fourth-blue: #c3daff;
+
+  /* CONSISTENT FONT FAMILY */
+  --font-inter: "Inter", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --font-noto: "Noto Serif Display", serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-redhat: "Red Hat Display", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-staatliches: "Staatliches", cursive;
+
+  /* CONSISTENT FONT SIZE */
+  --fontsz-display-61px: 61px; /* FOR PLAYFAIR DISPLAY */
+  --fontsz-display-49px: 49px; /* FOR PLAYFAIR DISPLAY */
+  --fontsz-subtitle-39px: 39px; /* FOR PLAYFAIR DISPLAY */
+  --fontsz-subtitle-31px: 31px; /* FOR INTER atau LATO*/
+  --fontsz-subtitle-24px: 24px; /* FOR INTER  atau kalo buat logo pake staatliches*/
+  --fontsz-article-16px: 16px; /* FOR LATO */
+  --fontsz-article-13px: 13px; /* FOR LATO */
+
+  /* BORDER RADIUS */
+  --border-radius: 10px;
+  --border-radius-button: 5px; /* tergantung size button */
+  --border-radius-input: 6px;
+}
+
+.span {
+  font-family: var(--font-staatliches);
+}
+
+#hero {
+  width: 100%;
+  height: 80vh;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 150px;
+  color: var(--primary-white);
+  transition: all ease 0.5s;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../assets/images/land.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero h1 {
+  width: 900px;
+  font-family: var(--font-staatliches);
+  font-size: 82px;
+}
+
+#hero p {
+  width: 700px;
+}
+
+#hero a {
+  margin-top: 20px;
+  padding: 10px 24px;
+  background-color: var(--secondary-red);
+  border-radius: 4px;
+  color: var(--primary-white);
+  transition: all ease 0.5s;
+}
+#hero a:hover {
+  background-color: var(--primary-red);
+  color: var(--sixth-black);
+  transform: translateY(3px);
+}
+
+/* HERO IMAGE */
+#hero-image {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 100px 0;
+}
+
+#hero-image h1 {
+  font-family: var(--font-redhat);
+  font-size: 72px;
+  color: var(--primary-white);
+}
+
+body {
+  background-color: #f7fbff;
+  overflow-x: hidden;
+}
+
+.title-landing {
+  transition: all ease 0.5s;
+}
+
+.keterangan {
+  transition: all ease 0.5s;
+}
+
+.container-bar {
+  transition: all ease 0.5s;
+}
+
+.dimensional-card {
+  transition: all ease 0.5s;
+}
+
+.dimensional-card:hover {
+  transform: translateY(-20px);
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1024px) {
+  .title-landing {
+    transform: scale(0.9);
+  }
+
+  .keterangan {
+    margin-top: 18px;
+    transform: scale(0.9);
+  }
+
+  .container-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar .right ul li:nth-child(n-4) {
+    display: none;
+  }
+
+  .navbar .right ul .ham {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .title-landing {
+    transform: scale(0.7);
+  }
+
+  .keterangan {
+    margin-top: 15px;
+    transform: scale(0.8);
+  }
+
+  .container-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #header-img {
+    height: 120vh;
+  }
+
+  #case .container-case {
+    flex-direction: column;
+  }
+
+  .card-container {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content-bar {
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .title {
+    display: block;
+    text-align: center;
+  }
+
+  .statement {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .content {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .header p {
+    font-size: 20px;
+  }
+
+  section {
+    padding: 75px 0;
+  }
+
+  #reason .right {
+    display: flex;
+    flexirection: column;
+  }
+
+  #reason .right:nth-child(n) {
+    transform: scale(0.9);
+    align-items: center;
+  }
+
+  .right .columns-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* footer */
+  #foot {
+    padding: 100px 30px;
+  }
+  .container-foot {
+    display: block;
+  }
+  .foot-right {
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+  }
+  .foot-left {
+    width: 100%;
+  }
+  
+  /* overlay */
+  .overlay {
+    width: 393px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .content-bar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .content {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .header h1 {
+    font-size: 45px;
+  }
+
+  section {
+    padding: 75px 0;
+  }
+}
+
+/* Footer */
+#foot {
+  padding: 100px 100px 0 100px;
+  border-top: 1px solid #e6e6e6;
+  margin-top: 300px;
+}
+.container-foot {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 80px;
+  margin-bottom: 30px;
+}
+.foot-right {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+.foot-left {
+  width: 50%;
+}
+.foot-left h1 {
+  font-family: var(--font-inter);
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--primary-red);
+}
+.foot-left .address {
+  font-family: var(--font-lato);
+  font-size: var(--fontsz-article-16px);
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 20px;
+  color: var(--primary-red);
+}
+.telp {
+  font-family: var(--font-lato);
+  font-size: var(--fontsz-article-16px);
+  font-weight: 300;
+  line-height: normal;
+  color: var(--primary-red);
+}
+.list-header {
+  line-height: 30px;
+}
+.content-link h3 {
+  font-family: var(--font-inter);
+  font-size: var(--fontsz-subtitle-20px);
+  font-weight: 600;
+  color: var(--primary-red);
+}
+.list a {
+  font-family: var(--font-lato);
+  font-size: 16px;
+  color: var(--primary-red);
+}
+.end-Footer {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+}
+.end-Footer span {
+  width: 100%;
+  background-color: #e6e6e6;
+  height: 1px;
+  font-size: 20px;
+  font-family: var(--font-inter);
+  font-weight: 400;
+  color: var(--primary-red);
+}
+/* tips container */
+.tips-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tips-container .card-tips {
+  width: 420px;
+}
+
+.tips-container .card-tips img {
+  width: 420px;
+  border-radius: 10px;
+  height: 250px;
+}
+
+.tips-container .card-tips .title-tips {
+  font-size: 24px;
+}
+
+/* overlay */
+.wrap {
+  width: 95%;
+  margin: auto;
+  height: 85%;
+  overflow-y: scroll;
+  padding: 40px;
+  background: #f7fbff;
+  margin-top: 90px;
+  border-radius: 20px;
+}
+.wrap h2 {
+  font-size: var(--fontsz-24px);
+}
+.openbtn {
+  background: var(--putih);
+  border: none;
+  padding: 10px 15px;
+  font-size: 17px;
+  cursor: pointer;
+  float: center;
+  border-radius: 10px;
+}
+.openbtn:hover {
+  background: #bbbbbb;
+  transform: translateY(15px);
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.closebtn {
+  position: absolute;
+  top: 70px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: var(--putih);
+}
+
+/* CONSULTATION */
+.consultation-diabetes {
+  padding: 150px 0;
+}
+
+.title-consultation-diabetes {
+  font-family: var(--font-Staatliches);
+  font-size: 82px;
+  line-height: 95px;
+  color: #ff436d;
+}
+
+.subtitle-consultation {
+  font-size: 18px;
+  line-height: 16px;
+}
+
+#search-consultation {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 7px;
+  border: 1px solid #bbb;
+  margin: 10px 0;
+}
+
+.fitur-group {
+  position: relative;
+}
+
+#search-consultation:focus {
+  border: 1px solid #ff436d;
+  outline: 1px solid #ff436d;
+}
+
+.filter-group {
+  margin-bottom: 65px;
+}
+
+.filter-fitur {
+  padding: 8px 20px;
+  background: #ffffff;
+  border: 1px solid #bbbbbb;
+  border-radius: 7px;
+  position: absolute;
+  right: 0;
+}
+
+.group-card-consultation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 30px;
+}
+
+.card-consultation {
+  width: 570px;
+  height: 273px;
+  display: flex;
+  background-color: #71a6ff;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.img-consultation {
+  width: 50%;
+  border-radius: 10px 0 0 10px;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  position: relative;
+}
+
+.img-place-group {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  text-align: right;
+  color: white;
+}
+
+.hospital-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.region-name {
+  font-size: 14px;
+}
+
+.desc-consultation {
+  width: 50%;
+}
+.doctor-bar-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.group-button {
+  position: relative;
+  justify-content: start;
+  align-items: end;
+  height: 70%;
+  padding-left: 20px;
+}
+.telp-button {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-copy {
+  font-family: var(--font-lato);
+  font-size: 16px;
+  width: 150px;
+  border: none;
+  border-bottom: 1px solid #f7fbff;
+  background: transparent;
+  color: var(--white-color);
+}
+.form-copy:focus {
+  outline: none;
+}
+.btn-copy {
+  background-color: transparent;
+  border: none;
+  border-radius: 100%;
+  height: 40px;
+}
+.btn-copy i {
+  width: 40px;
+  height: 40px;
+  background-color: none;
+}
+.telp-button i {
+  background-color: var(--primary-red);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.telp-button i:hover {
+  background-color: #fff;
+  color: var(--primary-red);
+  cursor: pointer;
+}
+.location-button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 60px;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+.location-button i {
+  background-color: #fff;
+  color: var(--primary-red);
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location-button i:hover {
+  background-color: var(--primary-red);
+  color: #fff;
+  cursor: pointer;
+}
+.title-doctor {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  color: #fff;
+}
+.doctor-name {
+  font-family: var(--font-inter);
+  font-size: var(--fontsz-14px);
+  line-height: 20px;
+  color: #fff;
+}
+
+/* End of Consultation diabetes */
