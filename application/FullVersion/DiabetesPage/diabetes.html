@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous" />
+    <title>ORTA</title>
+</head>
+<body>
+    <!-- Header -->
+    <header >
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-transparent navbar-dark mb-5">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">ORTA HEALTH</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link me-2" href="#">Discover</a>
+                <a class="nav-link me-2" href="#">HIV and AIDS</a>
+                <a class="nav-link me-2 active" href="#"
+                >Diabetes
+                <hr/>
+                </a>
+                <a class="nav-link" href="#">Kolesterol</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Navbar -->
+        <!-- Hero Section -->
+        <section id="hero" class="hero-container">
+          <h2 class="title-hero text-left mb-4">
+            ACTUALLY, WHAT IS DIABETES ?
+          </h2>
+          <h5 class="subtitle-hero text-left mb-5">
+            You Ask About What Diabetes is? <br />We Will Discuss On This Page
+          </h5>
+          <div class="row">
+            <div class="col">
+              <a href="#statement">
+                <button type="button" class="btn btn-danger button-hero">
+                    Get Started
+                  </button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- End Hero Section -->
+      </header>
+      <!-- End Header -->
+      <!-- Statement Page -->
+      <section id="statement">
+        <div class="container-statement">
+            <div class="title-statement">
+                <h2>BEFORE WE GO DEEPER
+                    <br/>
+                    INTO THIS WEBSITE, 
+                    <br/>
+                    WE MUST KNOW
+                    <br/>
+                    WHAT DIABETES IS???
+                </h2>
+                <div class="label-statement">
+                    <h4 class="openbtn" onclick="openForm()">READ MORE? CLICK ME!!</h4>
+                </div>
+                <div class="overlay" id="myOverlay">
+                  <span class="closebtn" onclick="closeForm()" title="close overlay">&#215</span>
+                  <div class="wrap">
+                    <h2>WHAT DIABETES IS???</h2>
+                    <div class="statement-overlay">
+                      Diabetes is a chronic disease characterized by high blood sugar levels. Glucose is the main source of energy for human body cells. However, in diabetics, the body cannot use glucose.
+                      <br>
+                      <br> 
+                      The level of sugar (glucose) in the blood is controlled by the hormone insulin, which is produced by the pancreas. However, in diabetics, the pancreas is unable to produce insulin according to the body's needs. Without insulin, the body's cells cannot absorb and process glucose into energy.
+                      <br>
+                      <br>
+                      Currently there are around 150 million people who have diabetes worldwide.
+                      Most sufferers only become aware of their diabetes after serious complications such as eye problems or kidney problems arise.
+                    </div>
+                  </div>
+                </div>
+                <script>
+                  function openForm() {
+                    document.getElementById("myOverlay") .style.display ="block";
+                  }
+                  function closeForm() {
+                    document.getElementById("myOverlay") .style.display ="none";
+                  }
+                </script>
+            </div>
+            <div class="subtitle-statement">
+                <p>
+                    Diabetes is a chronic disease characterized by high blood sugar levels. Glucose is the main source of energy for human body cells. However, in diabetics, the body cannot use glucose.
+                    <br>
+                    <br> 
+                    The level of sugar (glucose) in the blood is controlled by the hormone insulin, which is produced by the pancreas. However, in diabetics, the pancreas is unable to produce insulin according to the body's needs. Without insulin, the body's cells cannot absorb and process glucose into energy.
+                </p>
+            </div>
+        </div>
+        <div class="ask-statement">
+            <h4>EASY TO UNDERSTAND RIGHT ??</h4>
+            <h4><a href="#caused">WHAT'S NEXT ??</a></h4>
+        </div>
+      </section>  
+      <div class="end-Line">
+        <span></span>
+      </div>
+      <!-- End of Statement Page -->
+      <!-- Caused Page -->
+      <section id="caused">
+        <div class="container-caused">
+            <div class="caused-words">
+                <h4>after that, we will go into more specifically about diabetes</h4>
+            </div>
+            <div class="caused-content">
+                <h1>CAUSED</h1>
+                <div class="image-caused"></div>
+                <div class="diabetes-type">
+                    <div class="diabetes-type-content">
+                        <h4>DIABETES TYPE I</h4>
+                        <p>Type 1 diabetes occurs when the body's immune system mistakenly attacks and destroys the insulin-producing cells of the pancreas. This causes blood glucose levels to increase thereby triggering damage to the organs of the body. 
+
+                            Type 1 diabetes is also known as autoimmune diabetes. The cause of type 1 diabetes is still not known with certainty. However, there are suspicions that this disease is related to genetic factors and environmental factors
+                        </p>
+                    </div>
+                    <div class="diabetes-type-content">
+                        <h4>DIABETES TYPE II</h4>
+                        <p>Type 1 diabetes occurs when the body's immune system mistakenly attacks and destroys the insulin-producing cells of the pancreas. This causes blood glucose levels to increase thereby triggering damage to the organs of the body. 
+
+                            Type 1 diabetes is also known as autoimmune diabetes. The cause of type 1 diabetes is still not known with certainty. However, there are suspicions that this disease is related to genetic factors and environmental factors
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <div class="end-Line">
+        <span></span>
+      </div>
+      <!-- End of Caused Page -->
+      <!-- Risks Page -->
+      <section id="risks">
+        <div class="container-risk">
+            <div class="risk-right">
+                <div class="risk-image1"></div>
+                <div class="risk-type-parent">
+                    <div class="risk-type-child">
+                        <h4>RISK FACTORS <span class="for-color">FOR TYPE I DIABETES</span></h4>
+                        <ul>
+                            <li>4–7 years old or 10–14 years old</li>
+                            <li>Have a family history of type 1 diabetes</li>
+                            <li>Suffer from a disease caused by a viral infection</li>
+                            <li>Suffering from an autoimmune disease</li>
+                            <li>Experiencing injury to the pancreas</li>
+                        </ul>
+                    </div>
+                    <div class="risk-type-child">
+                        <h4>RISK FACTORS <span class="for-color">FOR TYPE II DIABETES</span></h4>
+                        <ul>
+                            <li>Over 45 years old</li>
+                            <li>Have a family history of type 2 diabetes</li>
+                            <li>Rarely do physical activity or exercise</li>
+                            <li>Are overweight or obese</li>
+                            <li>Suffer from prediabetes</li>
+                            <li>Suffering from high cholesterol</li>
+                            <li>Suffer from high blood pressure (hypertension)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="risk-left">
+                <div class="risk-statement">
+                    <h1>RISKS</h1>
+                    <p class="statement-top">
+                        In general, diabetes is divided into two types, namely type 1 and type 2 diabetes. Type 1 diabetes occurs when the patient's immune system attacks and destroys the pancreatic cells that produce insulin. This is what causes an increase in blood glucose levels, resulting in damage to the organs of the body.
+                    </p>
+                    <div class="risk-statement-bottom">
+                        <h4>MORE <span class="for-color">RISK</span></h4>
+                        <p>
+                            Especially for women, pregnant women who suffer from gestational diabetes can more easily develop type 2 diabetes. In addition, women who have a history of polycystic ovarian syndrome (PCOS) are also more prone to developing type 2 diabetes.
+                        </p>
+                    </div>
+                </div>
+                <div class="risk-image2"></div>
+            </div>
+        </div>
+      </section>
+      <div class="end-Line">
+        <span></span>
+      </div>
+      <!-- End of Risks Page -->
+      <!-- Symtoms Page -->
+      <section id="symptoms">
+        <div class="container-symptoms">
+          <div class="symptoms-left">
+            <div class="header-symptoms">
+              <h1>SYMPTOMS OF DIABETES</h1>
+              <p>
+                Type 1 diabetes can develop rapidly within weeks or even days. Whereas in type 2 diabetes, many sufferers do not realize that they have had diabetes for years, because the symptoms tend to be non-specific.
+              </p>
+            </div>
+            <div class="symptoms-statement">
+              <div class="symptoms-type">
+                <h4>SYMPTOMS <span class="for-color">for type 2 diabetes</span></h4>
+                <ul>
+                  <li>Often feeling thirsty or very hungry</li>
+                  <li>Frequent urination, especially at night</li>
+                  <li>Weight loss for no apparent reason</li>
+                  <li>Decreased muscle mass</li>
+                  <li>Blurred vision</li>
+                  <li>Urine contains ketones</li>
+                  <li>The body gets tired and weak</li>
+                </ul>
+              </div>
+              <div class="symptoms-several">
+                <h4><span class="for-color">In addition, there are several other</span>  symptoms <span class="for-color">that can also be experienced by</span>  diabetics<span class="for-color">, including :</span></h4>
+                <ul>
+                  <li>Dry mouth</li>
+                  <li>Itching of the skin or prurigo occurs</li>
+                  <li>Erectile dysfunction or impotence</li>
+                  <li>Burning, stiffness and pain in the legs</li>
+                  <li>Reactive hypoglycemia, namely hypoglycemia that occurs several hours after eating due to excessive insulin production</li>
+                  <li>Black patches around the neck, armpits, and groin (akantosis nigricans) which can be a sign of insulin resistance</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="symptoms-left-img"></div>
+        </div>
+        <div class="symptoms-right-img"></div>
+      </section>
+      <div class="end-Line">
+        <span></span>
+      </div>  
+      <!-- End of Symptoms Page -->
+
+      <!-- consultation diabetes -->
+      <section class="consultation-diabetes">
+        <div class="group-text">
+          <div class="title-consultation-diabetes">
+            CONSULTATION DIABETES
+          </div>
+          <div class="subtitle-consultation">
+            <p>Consultation to Nearest Hospital!!</p>
+            <p>We have a recomendation for you to check your health with the best doctor about Diabetes in your city !!!</p>
+          </div>
+        </div>
+        <div class="fitur-group">
+          <div class="search-group">
+            <input type="text" id="search-consultation" placeholder="ex : DKI JAKARTA"/>
+          </div>
+          <div class="filter-group">
+            <select class="filter-fitur">
+              <option value="">ALL</option>
+            </select>
+          </div>
+        </div>
+        <div class="group-card-consultation">
+          <div class="card-consultation">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.251191744993!2d106.84529310786286!3d-6.197253032341737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f441e3defea3%3A0x1fc934cbc618b021!2sGedung%20A%20Rumah%20Sakit%20Dr.%20Cipto%20Mangunkusomo%20(RSCM)!5e0!3m2!1sid!2sid!4v1677750959352!5m2!1sid!2sid" width="" height="" style="border:0;" allowfullscreen="" class="img-consultation" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="desc-consultation">
+              <!-- doctor desc -->
+              <div class="doctor-bar-group">
+                <div class="doctor-name">
+                  <div class="title-doctor">Rumah Sakit</div>
+                  <div class="doctor-name">
+                    Dr. Cipto Mangunkusomo 
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- telp and location -->
+              <div class="group-button">
+                <div class="telp-button">
+                  <i class="fa-solid fa-phone"></i>
+                  <input class="form-copy" id="text-copy1" value="1500135" readonly>
+                  <button class="btn-copy" onclick="copyText1()"><i class="fa-solid fa-clipboard"></i></button>
+                </div>
+                <div class="location-button">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <input class="form-copy" id="text-copy-location1" value="Gedung A, Jl. Pangeran Diponegoro No.71, RW.5, Kenari, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10430" readonly>
+                  <button class="btn-copy" onclick="copyTextLocation1()"><i class="fa-solid fa-clipboard"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            function copyText1() {  
+                var copyText = document.getElementById("text-copy1");  
+                copyText.select();  
+                var copy = document.execCommand("copy");
+                if(copy){
+                    alert("Sudah di copy")
+                }else {
+                    alert("belum tercopy")
+                }
+            }
+            function copyTextLocation1() {  
+                var copyText = document.getElementById("text-copy-location1");  
+                copyText.select();  
+                var copy = document.execCommand("copy");
+                if(copy){
+                    alert("Sudah di copy")
+                }else {
+                    alert("belum tercopy")
+                }
+            }
+        </script>
+          <div class="card-consultation">
+            <div class="img-consultation">
+              <div class="img-place-group">
+                <div class="hospital-name">Hospital Name</div>
+                <div class="region-name"> DKI JAKARTA</div>
+              </div>
+            </div>
+            <div class="desc-consultation">
+              <!-- doctor desc -->
+              <div class="doctor-bar-group">
+                <div class="doctor-name">
+                  <div class="title-doctor">Specialist Doctor</div>
+                  <div class="doctor-name">
+                    Dr. Chopper
+                  </div>
+                </div>
+              </div>
+
+              <!-- telp and location -->
+              <div class="group-button">
+                <div class="telp-button">
+                  <i class="fa-solid fa-phone"></i>
+                  <input class="form-copy" id="text-copy2" value="0214891708" readonly>
+                  <button class="btn-copy" onclick="copyText2()"><i class="fa-solid fa-clipboard"></i></button>
+                </div>
+                <div class="location-button">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <input class="form-copy" id="text-copy-location2" value="Jl. Persahabatan Raya No.1, RT.16/RW.13, Pisangan Tim., Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13230" readonly>
+                  <button class="btn-copy" onclick="copyTextLocation2()"><i class="fa-solid fa-clipboard"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          function copyText2() {  
+              var copyText = document.getElementById("text-copy2");  
+              copyText.select();  
+              var copy = document.execCommand("copy");
+              if(copy){
+                  alert("Sudah di copy")
+              }else {
+                  alert("belum tercopy")
+              }
+          }
+          function copyTextLocation2() {  
+              var copyText = document.getElementById("text-copy-location2");  
+              copyText.select();  
+              var copy = document.execCommand("copy");
+              if(copy){
+                  alert("Sudah di copy")
+              }else {
+                  alert("belum tercopy")
+              }
+          }
+      </script>
+        <div class="group-card-consultation">
+          <div class="card-consultation">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.223196795362!2d106.88619248304217!3d-6.204696752151275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f49718724acb%3A0xe7d6017f08e37200!2sRumah%20Sakit%20Umum%20Pusat%20(RSUP)%20Persahabatan!5e0!3m2!1sid!2sid!4v1677750459135!5m2!1sid!2sid" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" class="img-consultation" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="desc-consultation">
+              <!-- doctor desc -->
+              <div class="doctor-bar-group">
+                <div class="doctor-name">
+                  <div class="title-doctor">Specialist Doctor</div>
+                  <div class="doctor-name">
+                    Dr. Chopper
+                  </div>
+                </div>
+              </div>
+
+              <!-- telp and location -->
+              <div class="group-button">
+                <div class="telp-button">
+                  <i class="fa-solid fa-phone"></i>
+                  <input class="form-copy" id="text-copy3" value="0214891708" readonly>
+                  <button class="btn-copy" onclick="copyText3()"><i class="fa-solid fa-clipboard"></i></button>
+                </div>
+                <div class="location-button">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <input class="form-copy" id="text-copy-location3" value="Jl. Persahabatan Raya No.1, RT.16/RW.13, Pisangan Tim., Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13230" readonly>
+                  <button class="btn-copy" onclick="copyTextLocation3()"><i class="fa-solid fa-clipboard"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            function copyText3() {  
+                var copyText = document.getElementById("text-copy3");  
+                copyText.select();  
+                var copy = document.execCommand("copy");
+                if(copy){
+                    alert("Sudah di copy")
+                }else {
+                    alert("belum tercopy")
+                }
+            }
+            function copyTextLocation3() {  
+                var copyText = document.getElementById("text-copy-location3");  
+                copyText.select();  
+                var copy = document.execCommand("copy");
+                if(copy){
+                    alert("Sudah di copy")
+                }else {
+                    alert("belum tercopy")
+                }
+            }
+        </script>
+          <div class="card-consultation">
+            <div class="img-consultation">
+              <div class="img-place-group">
+                <div class="hospital-name">Hospital Name</div>
+                <div class="region-name"> DKI JAKARTA</div>
+              </div>
+            </div>
+            <div class="desc-consultation">
+              <!-- doctor desc -->
+              <div class="doctor-bar-group">
+                <div class="doctor-name">
+                  <div class="title-doctor">Specialist Doctor</div>
+                  <div class="doctor-name">
+                    Dr. Chopper
+                  </div>
+                </div>
+              </div>
+
+              <!-- telp and location -->
+              <div class="group-button">
+                <div class="telp-button">
+                  <i class="fa-solid fa-phone"></i>
+                  <input class="form-copy" id="text-copy4" value="1500135" readonly>
+                  <button class="btn-copy" onclick="copyText4()"><i class="fa-solid fa-clipboard"></i></button>
+                </div>
+                <div class="location-button">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <input class="form-copy" id="text-copy-location4" value="" readonly>
+                  <button class="btn-copy" onclick="copyTextLocation4()"><i class="fa-solid fa-clipboard"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          function copyText4() {  
+              var copyText = document.getElementById("text-copy4");  
+              copyText.select();  
+              var copy = document.execCommand("copy");
+              if(copy){
+                  alert("Sudah di copy")
+              }else {
+                  alert("belum tercopy")
+              }
+          }
+          function copyTextLocation4() {  
+              var copyText = document.getElementById("text-copy-location4");  
+              copyText.select();  
+              var copy = document.execCommand("copy");
+              if(copy){
+                  alert("Sudah di copy")
+              }else {
+                  alert("belum tercopy")
+              }
+          }
+      </script>
+      </section>
+      <div class="end-Line">
+        <span></span>
+      </div>  
+      <!-- End of Consultation diabetes -->
+
+      <!-- Tips Page -->
+
+      <section id="tips">
+        <div class="container-tips">
+          <div class="header-tips">
+            <h1>Here are some tips that you can 
+              <br/>
+              do to prevent DIABETES</h1>
+            <p>We hope these tips can help you</p>
+          </div>
+          <div class="content-tips">
+            <div class="step-tips">
+              <div class="img-step1"></div>
+              <div class="step-group">
+                <div class="step-header">
+                  <h4>1. Exercise Routine</h4>
+                </div>
+                <div class="content-step">
+                  <p>
+                    How to prevent diabetes through regular exercise can increase insulin production and the sensitivity of body cells to insulin. That way, blood sugar levels will be controlled properly, so you can avoid diabetes.
+                    <br>
+                    In addition, exercise also helps burn calories to produce energy and store excess glucose as energy reserves in the form of muscle protein as a reserve so that it does not accumulate in the blood.
+                    <br>
+                    Do at least 150 minutes of exercise each week, divided into 5 sessions or days, 30 minutes per session.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="step-tips">
+              <div class="img-step2"></div>
+              <div class="step-group">
+                <div class="step-header">
+                  <h4>2. Adopt a Healthy Diet</h4>
+                </div>
+                <div class="content-step">
+                  <p>
+                    How to prevent diabetes from an early age must also be accompanied by the adoption of a healthy diet. Try to reduce fast food, high sugar and fat. Start choosing foods with high nutritional content, such as protein, fiber and vitamins.
+                    <br>
+                    In addition, pay attention to food portions to reduce calorie intake in the body. Where these calories can cause weight gain, and if they are excessive, the risk of diabetes is higher.
+                    <br>
+                    Apart from paying attention to food portions, don't ignore the meal schedule either. A healthy diet is supported by eating regularly with sufficient portions.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="step-tips">
+              <div class="img-step3"></div>
+              <div class="step-group">
+                <div class="step-header">
+                  <h4>3. Diligent Drinking Water</h4>
+                </div>
+                <div class="content-step">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Step Page -->
+      
+      <!--Start of Tawk.to Script-->
+      <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/63ff12cd31ebfa0fe7effc63/1gqe62tme';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+      </script>
+      <!--End of Tawk.to Script-->
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="container-footer">
+          <div class="header-left">
+            <h1>Orta Health</h1>
+            <p class="address">
+              Jl. Balai Pustaka Baru I No.2, RT.2/RW.7, Rawamangun, Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13220
+            </p>
+            <p class="telp">
+              +62 85718917735
+            </p>
+          </div>
+          <div class="content-right-group">
+            <div class="content-navigation">
+              <h3>Features</h3>
+              <ul class="list-header">
+                <li class="list">About us</li>
+                <li class="list">News</li>
+                <li class="list">Articles</li>
+                <li class="list">Tips</li>
+                <li class="list">Solutions</li>
+                <li class="list">Services</li>
+                <li class="list">Contact</li>
+                <li class="list">Education</li>
+              </ul>
+            </div>
+            <div class="content-navigation">
+              <h3>Social Media</h3>
+              <ul class="list-header">
+                <li class="list">Instagram</li>
+                <li class="list">Facebook</li>
+                <li class="list">Twitter</li>
+                <li class="list">Tiktok</li>
+                <li class="list">Whatsapp</li>
+              </ul>
+            </div>
+            <div class="content-navigation">
+              <h3>Legal</h3>
+              <ul class="list-header">
+                <li class="list">Terms</li>
+                <li class="list">Privacy</li>
+                <li class="list">Cookies</li>
+                <li class="list">Licenses</li>
+                <li class="list">Settings</li>
+                <li class="list">Policy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="end-Footer">
+          <span>2023 Orta Health. All right reserved.</span>
+        </div>
+      </footer>
+      
+</body>

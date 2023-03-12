@@ -1,0 +1,102 @@
+.wrap {
+  max-width: 350px;
+  margin: auto;
+  padding: 20px;
+  background: var(--putih);
+  margin-top: 70px;
+  border-radius: 20px;
+}
+
+form {
+  margin-top: 50px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  border: 2px solid #000;
+  font-size: 15px;
+  border-radius: 5px;
+}
+textarea{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  border: 2px solid #000;
+  font-size: 15px;
+  border-radius: 5px;
+  font-family: var(--montserrat);
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  text-align: center;
+  font-family: var(--poppins);
+}
+input{
+  font-family: var(--montserrat);
+}
+.read{
+  background-color: grey;
+}
+
+input[type='submit'] {
+  font-size: 16px;
+  margin-top: 30px;
+  color: var(--putih);
+  font-weight: bold;
+  background: var(--birutua);
+  border: 1px solid var(--putih);
+  cursor: pointer;
+  font-family: var(--poppins);
+}
+
+input[type='submit']:hover {
+  background: var(--ungu-muda);
+}
+
+.open .openbtn {
+  background: var(--putih);
+  border: none;
+  padding: 10px 15px;
+  font-size: 17px;
+  cursor: pointer;
+  float: right;
+}
+.open .openbtn:hover {
+  background: #bbb;
+  cursor: pointer;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: var(--putih);
+}
+
+.closebtn:hover {
+  color: #ccc;
+}

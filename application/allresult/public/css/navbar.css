@@ -1,0 +1,74 @@
+.ham {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 100%;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+}
+
+.ham i {
+  font-size: 31px;
+  color: #333;
+}
+
+.menu {
+  display: none;
+}
+
+.nav-colored {
+  background: rgba(24, 24, 24, 0.85);
+  backdrop-filter: blur(40px);
+}
+
+.nav-transparent {
+  background-color: transparent;
+}
+
+#mynav {
+  transition: all ease 0.4s;
+  z-index: 9999;
+  padding: 20px 100px;
+}
+
+/* khusus hamburger menu */
+@media only screen and (max-width: 800px) {
+  .menu {
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    transform: translateX(-100%);
+    border-radius: 0 100% 100% 0;
+    transition: all ease 0.9s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+  }
+
+  .menu ul {
+    font-size: 24px;
+    transition: 0.7s;
+  }
+
+  .menu.add {
+    transform: translateX(0);
+    transition: 0.4s;
+    border-radius: 0 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar .right ul li:nth-child(n-4) {
+    display: none;
+  }
+
+  .navbar .right ul .ham {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
