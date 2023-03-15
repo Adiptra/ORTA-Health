@@ -150,10 +150,21 @@ section {
   left: -99px;
 }
 
-#tips {
-  width: 200%;
+.tips-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   position: relative;
-  left: -99px;
+}
+.words-tips{
+  position: absolute;
+  left:25%;
+  top: 40%;
+  color: #4285f4;
+  opacity: 50%;
+  font-size: 82px;
+  transform: rotate(90deg);
+  font-family: var(--font-staatliches);
 }
 
 /* MEDIA SCREEN */
@@ -289,10 +300,17 @@ section {
   }
 
   /* tips container */
-.tips-container {
-  width: 390px;
-
-}
+  #tips {
+    width: 200%;
+    position: relative;
+    left: -99px;
+  }
+  .tips-container {
+    width: 390px;
+  }
+  .words-tips {
+    display: none;
+  }
 }
 
 /* tips container */
