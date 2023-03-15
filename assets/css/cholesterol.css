@@ -247,4 +247,7 @@
   .err-text h1 {
     font-family: var(--font-staatliches);
   }
+  .closebtn {
+    display: unset;
+  }
 }
