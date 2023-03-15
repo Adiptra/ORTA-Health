@@ -52,7 +52,7 @@
 }
 
 .grid-container {
-  width: 80%;
+  width: 86%;
   margin: auto;
 }
 
@@ -67,6 +67,7 @@
   text-align: center;
   margin-bottom: 150px;
   color: var(--primary-white);
+  overflow-x: hidden !important;
 }
 
 #hero h1 {

@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Noto+Serif+Display&family=Poppins&family=Red+Hat+Display&family=Roboto&family=Staatliches&display=swap");
+
+:root {
+  /* COLORS*/
+
+  /* BLACK to White*/
+  --primary-black: #0303030;
+  --secondary-black: #1d1d1d;
+  --third-black: #282828;
+  --fourth-black: #a0a0a0;
+  --fifth-black: #c5c5c5;
+  --sixth-black: #e6e6e6;
+
+  /* WHITE */
+  --primary-white: #fff;
+  --body-bg-white: #f7fbff;
+  --blue-white: #deeeff;
+
+  /* RED */
+  --primary-red: #ff2052;
+  --secondary-red: #ff436d;
+  --third-red: #ff6689;
+  --fourth-red: #ffbfcd;
+  --fifth-red: #ffdbe3;
+
+  /* BLUE */
+  --primary-blue: #4285f4;
+  --secondary-blue: #5a98ff;
+  --third-blue: #71a6ff;
+  --fourth-blue: #c3daff;
+
+  /* CONSISTENT FONT FAMILY */
+  --font-inter: "Inter", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --font-noto: "Noto Serif Display", serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-redhat: "Red Hat Display", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-staatliches: "Staatliches", cursive;
+
+  /* CONSISTENT FONT SIZE */
+  --fontsz-display-61px: 61px; /* FOR PLAYFAIR DISPLAY */
+  --fontsz-display-49px: 49px; /* FOR PLAYFAIR DISPLAY */
+  --fontsz-subtitle-39px: 39px; /* FOR PLAYFAIR DISPLAY */
+  --fontsz-subtitle-31px: 31px; /* FOR INTER atau LATO*/
+  --fontsz-subtitle-24px: 24px; /* FOR INTER  atau kalo buat logo pake staatliches*/
+  --fontsz-article-16px: 16px; /* FOR LATO */
+  --fontsz-article-13px: 13px; /* FOR LATO */
+
+  /* BORDER RADIUS */
+  --border-radius: 10px;
+  --border-radius-button: 5px; /* tergantung size button */
+  --border-radius-input: 6px;
+}
+
+.span {
+  font-family: var(--font-staatliches);
+}
+
+#hero {
+  width: 100%;
+  height: 80vh;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 150px;
+  color: var(--primary-white);
+  transition: all ease 0.5s;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../images/land.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+#hero h1 {
+  width: 900px;
+  font-family: var(--font-staatliches);
+  font-size: 82px;
+}
+
+#hero p {
+  width: 700px;
+}
+
+#hero a {
+  margin-top: 20px;
+  padding: 10px 24px;
+  background-color: var(--secondary-red);
+  border-radius: 4px;
+  color: var(--primary-white);
+  transition: all ease 0.5s;
+}
+#hero a:hover {
+  background-color: var(--primary-red);
+  color: var(--sixth-black);
+  transform: translateY(3px);
+}
+
+/* HERO IMAGE */
+#hero-image {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 100px 0;
+}
+
+#hero-image h1 {
+  font-family: var(--font-redhat);
+  font-size: 72px;
+  color: var(--primary-white);
+}
+
+.little {
+  font-family: var(--font-staatliches);
+}
+
+.blue {
+  color: var(--secondary-blue);
+  font-family: var(--font-staatliches);
+}
+
+.red {
+  color: var(--secondary-red);
+  font-family: var(--font-staatliches);
+}
+
+/* CONTENT */
+.enjoy {
+  width: 100%;
+  border-radius: 10px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 96px;
+  font-family: var(--font-staatliches);
+  color: var(--primary-white);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../../assets/images/bg.png);
+}
+
+.text-telling {
+  text-align: center;
+  font-size: 82px;
+  font-family: var(--font-staatliches);
+}
+
+.defintion-box {
+  box-shadow: 20px 20px 0 var(--secondary-blue);
+}
+
+/* overlay */
+.wrap {
+  width: 95%;
+  margin: auto;
+  height: 85%;
+  overflow-y: scroll;
+  padding: 40px;
+  background: #f7fbff;
+  margin-top: 90px;
+  border-radius: 20px;
+}
+.wrap h2 {
+  font-size: var(--fontsz-24px);
+}
+.openbtn {
+  background: var(--putih);
+  border: none;
+  padding: 10px 15px;
+  font-size: 17px;
+  cursor: pointer;
+  float: center;
+  border-radius: 10px;
+}
+.openbtn:hover {
+  background: #bbbbbb;
+  transform: translateY(15px);
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.closebtn {
+  position: absolute;
+  top: 70px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: var(--putih);
+}
+
+#err-responsive {
+  display: none;
+}
+
+@media only screen and (max-width: 600px){
+  #hero {
+    display: none;
+  }
+  .enjoy {
+    background-image: none;
+    color: #f7fbff;
+    height: 5px;
+    font-size: 1px;
+  }
+  .text-telling {
+    display: none;
+  }
+  .defintion-box {
+    display: none;
+  }
+  span {
+    display: none;
+  }
+  section {
+    display: none;
+  }
+  .content {
+    display: none;
+  }
+  #err-responsive {
+    display: unset;
+  }
+  .err-text{
+    color: var(--primary-red);
+    font-size: 48px;
+    margin-top: 200px;
+    text-align: center;
+  }
+  .err-text h1 {
+    font-family: var(--font-staatliches);
+  }
+}

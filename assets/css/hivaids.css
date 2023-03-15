@@ -39,25 +39,17 @@
   --font-staatliches: "Staatliches", cursive;
 
   /* CONSISTENT FONT SIZE */
-  --fontsz-display-61px: 61px;
-  /* FOR PLAYFAIR DISPLAY */
-  --fontsz-display-49px: 49px;
-  /* FOR PLAYFAIR DISPLAY */
-  --fontsz-subtitle-39px: 39px;
-  /* FOR PLAYFAIR DISPLAY */
-  --fontsz-subtitle-31px: 31px;
-  /* FOR INTER atau LATO*/
-  --fontsz-subtitle-24px: 24px;
-  /* FOR INTER  atau kalo buat logo pake staatliches*/
-  --fontsz-article-16px: 16px;
-  /* FOR LATO */
-  --fontsz-article-13px: 13px;
-  /* FOR LATO */
+  --fontsz-display-61px: 61px; /* FOR PLAYFAIR DISPLAY */
+  --fontsz-display-49px: 49px; /* FOR PLAYFAIR DISPLAY */
+  --fontsz-subtitle-39px: 39px; /* FOR PLAYFAIR DISPLAY */
+  --fontsz-subtitle-31px: 31px; /* FOR INTER atau LATO*/
+  --fontsz-subtitle-24px: 24px; /* FOR INTER  atau kalo buat logo pake staatliches*/
+  --fontsz-article-16px: 16px; /* FOR LATO */
+  --fontsz-article-13px: 13px; /* FOR LATO */
 
   /* BORDER RADIUS */
   --border-radius: 10px;
-  --border-radius-button: 5px;
-  /* tergantung size button */
+  --border-radius-button: 5px; /* tergantung size button */
   --border-radius-input: 6px;
 }
 
@@ -73,10 +65,9 @@
   margin-bottom: 150px;
   color: var(--primary-white);
   transition: all ease 0.5s;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../src/cholesterol.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../images/bg-first.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position-y: center;
+  background-size: cover;
 }
 
 #hero h1 {
@@ -97,7 +88,6 @@
   color: var(--primary-white);
   transition: all ease 0.5s;
 }
-
 #hero a:hover {
   background-color: var(--primary-red);
   color: var(--sixth-black);
@@ -108,7 +98,7 @@
 #hero-image {
   width: 100%;
   height: 300px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/hero.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: center;
@@ -128,6 +118,7 @@
 /* DEFINITION */
 #definition {
   width: 100%;
+  overflow-x: hidden;
 }
 
 #definition .definiton-hivaids {
@@ -148,10 +139,10 @@
   font-family: var(--font-staatliches);
 }
 
-/* span {
+span {
   color: var(--primary-red);
   font-family: var(--font-staatliches);
-} */
+}
 
 #definition .definiton-hivaids article {
   width: 60%;
@@ -266,7 +257,7 @@
 }
 
 #conjunction h1 {
-  margin-top: -10px;
+  margin-top: -7px;
   padding: 50px 0;
   color: var(--primary-white);
   text-align: center;
@@ -342,6 +333,120 @@
   color: var(--secondary-red);
 }
 
+/* Footer */
+#foot {
+  padding: 100px 100px 0 100px;
+  border-top: 1px solid #e6e6e6;
+}
+.container-foot {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 80px;
+  margin-bottom: 30px;
+}
+.foot-right {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+.foot-left {
+  width: 50%;
+}
+.foot-left h1 {
+  font-family: var(--font-inter);
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--primary-red);
+}
+.foot-left .address {
+  font-family: var(--font-lato);
+  font-size: var(--fontsz-article-16px);
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 20px;
+  color: var(--primary-red);
+}
+.telp {
+  font-family: var(--font-lato);
+  font-size: var(--fontsz-article-16px);
+  font-weight: 300;
+  line-height: normal;
+  color: var(--primary-red);
+}
+.list-header {
+  line-height: 30px;
+}
+.content-link h3 {
+  font-family: var(--font-inter);
+  font-size: var(--fontsz-subtitle-20px);
+  font-weight: 600;
+  color: var(--primary-red);
+}
+.list a {
+  font-family: var(--font-lato);
+  font-size: 16px;
+  color: var(--primary-red);
+}
+.end-Footer {
+  display: flex;
+  height: 10vh;
+  width: 100%;
+}
+
+
+/* overlay */
+.wrap {
+  width: 95%;
+  margin: auto;
+  height: 85%;
+  overflow-y: scroll;
+  padding: 40px;
+  background: #f7fbff;
+  margin-top: 90px;
+  border-radius: 20px;
+}
+.wrap h2 {
+  font-size: var(--fontsz-24px);
+}
+.openbtn {
+  background: var(--putih);
+  border: none;
+  padding: 10px 15px;
+  font-size: 17px;
+  cursor: pointer;
+  float: center;
+  border-radius: 10px;
+}
+.openbtn:hover {
+  background: #bbbbbb;
+  transform: translateY(15px);
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.closebtn {
+  position: absolute;
+  top: 70px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: var(--putih);
+}
+
+.closebtn:hover {
+  color: #ccc;
+}
+
 @media only screen and (max-width: 1200px) {
   #hero {
     transition: all ease 0.5s;
@@ -400,7 +505,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   #hero {
     transition: all ease 0.5s;
   }
@@ -444,5 +549,34 @@
 
   .itemBox .group-left {
     width: 100%;
+  }
+  /* consul */
+  .group-card-consultation {
+    flex-direction: column;
+  }
+  .title-consultation-diabetes {
+    font-size: 39px;
+    line-height: 40px;
+  }
+  .card-consultation {
+    width: 100%;
+    height: 190px;
+  }
+  .subtitle-consultation {
+    margin-top: 20px;
+  }
+  .location-button i {
+    display: none;
+  }
+  .telp-button i {
+    display: none;
+  }
+  .form-copy {
+    display: none;
+  }
+
+  /* overlay */
+  .overlay {
+    width: 393px;
   }
 }

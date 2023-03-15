@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/navbar.css" />
-    <link rel="stylesheet" href="../css/layout.css" />
-    <link rel="stylesheet" href="../css/hivaids.css" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/hivaids.css" />
+    <link rel="stylesheet" href="../templates/navbar.css" />
+    <link rel="stylesheet" href="../templates/layout.css" />
+    <link rel="stylesheet" href="../templates/footer.css" />
+    <link rel="stylesheet" href="../templates/consultation.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>HIV and AIDS | Orta</title>
@@ -63,12 +66,12 @@
 
       <!-- HERO SECTION -->
       <section id="hero">
-        <h1>
+        <h1 data-aos="fade-up">
           Learn More About <br />
           HIV and AIDS
         </h1>
-        <p>On this page, we will thoroughly discuss HIV and AIDS <br />and matters related to HIV and AIDS. What do you think??</p>
-        <a href="#hero-image">GET STARTED</a>
+        <p data-aos="fade-up">On this page, we will thoroughly discuss HIV and AIDS <br />and matters related to HIV and AIDS. What do you think??</p>
+        <a href="#hero-image" data-aos="fade-up">GET STARTED</a>
       </section>
       <div class="grid-container">
         <section id="hero-image">
@@ -80,16 +83,16 @@
     <div class="grid-container">
       <section id="definition">
         <article class="definiton-hivaids">
-          <h1><span class="blue">What</span> is <span>HIV</span>?</h1>
+          <h1 data-aos="fade-right"><span class="blue">What</span> is <span>HIV</span>?</h1>
           <article>
-            <p>
+            <p data-aos="fade-left">
               <span>HIV (human immunodeficiency virus)</span> is a virus that attacks cells that help the body fight infection, making a person more
               vulnerable to other infections and diseases. It is spread by contact with certain bodily fluids of a person with HIV, most commonly
               during unprotected sex (sex without a condom or HIV medicine to prevent or treat HIV), or through sharing injection drug equipment. If
               left untreated, HIV can lead to the disease AIDS (acquired immunodeficiency syndrome).
             </p>
             <br />
-            <p>
+            <p data-aos="fade-right">
               <span>HIV (human immunodeficiency virus)</span> is a virus that attacks cells that help the body fight infection, making a person more
               vulnerable to other infections and diseases. It is spread by contact with certain bodily fluids of a person with HIV, most commonly
               during unprotected sex (sex without a condom or HIV medicine to prevent or treat HIV), or through sharing injection drug equipment. If
@@ -97,7 +100,7 @@
               <br />
             </p>
             <br />
-            <p>
+            <p data-aos="fade-left">
               <span>In Addition</span>, there are effective methods to prevent getting HIV through sex or drug use, including pre-exposure prophylaxis
               (PrEP), medicine people at risk for HIV take to prevent getting HIV from sex or injection drug use, and post-exposure prophylaxis (PEP),
               HIV medicine taken within 72 hours after a possible exposure to prevent the virus from taking hold. Learn about other ways to prevent
@@ -110,14 +113,14 @@
         <div class="line"></div>
 
         <article class="definiton-hivaids">
-          <h1><span class="blue">What</span> is <span>AIDS</span>?</h1>
+          <h1 data-aos="fade-right"><span class="blue">What</span> is <span>AIDS</span>?</h1>
           <article>
-            <p>
+            <p data-aos="fade-left">
               <span>AIDS is the late stage of HIV infection</span> that occurs when the body’s immune system is badly damaged because of the virus. In
               the U.S., most people with HIV do not develop AIDS because taking HIV medicine as prescribed stops the progression of the disease.
             </p>
             <br />
-            <div>
+            <div data-aos="fade-right">
               <p>A person with HIV is considered to have progressed to AIDS when :</p>
               <ol type="1">
                 <li>
@@ -130,7 +133,7 @@
             </div>
 
             <br />
-            <p>
+            <p data-aos="fade-left">
               Without HIV medicine, people with AIDS typically <span>survive about 3 years </span>. Once someone has a dangerous opportunistic
               illness, life expectancy without treatment falls to about 1 year. HIV medicine can still help people at this stage of HIV infection, and
               it can even be lifesaving. But people who start HIV medicine soon after they get HIV experience more benefits—that’s why HIV testing is
@@ -143,18 +146,18 @@
 
       <section id="detail-definition">
         <div class="title-detail">
-          <h1>and then <span class="blue">we will discuss further and in more detail</span> about <span>hiv and aids</span></h1>
+          <h1 data-aos="zoom-in" data-aos-duration="1000">and then <span class="blue">we will discuss further and in more detail</span> about <span>hiv and aids</span></h1>
         </div>
         <div class="ul">
           <div>
-            <li class="list active" data-filter="all">All</li>
-            <li class="list" data-filter="risk">Risk</li>
-            <li class="list" data-filter="symtom">Symptom</li>
+            <li class="list active" data-filter="all" data-aos="fade-left">All</li>
+            <li class="list" data-filter="risk" data-aos="fade-up">Risk</li>
+            <li class="list" data-filter="symtom" data-aos="fade-right">Symptom</li>
           </div>
         </div>
         <div class="detail-definition-content">
           <article class="itemBox" data-item="risk">
-            <div class="group-left">
+            <div class="group-left" data-aos="fade-up">
               <h1>Is the Risk of HIV Different for Different Groups?</h1>
               <img src="assets/images/hivaids.png" alt="" />
               <p>
@@ -189,10 +192,10 @@
               </p>
             </div>
             <div class="group-right">
-              <div>RISK of HIV and AIDS</div>
+              <div data-aos="fade-down">RISK of HIV and AIDS</div>
             </div>
           </article>
-          <article class="itemBox" data-item="symtom">
+          <article class="itemBox" data-item="symtom" data-aos="fade-up">
             <div class="group-left">
               <h1>What Are the Symptoms of HIV?</h1>
               <p>
@@ -252,7 +255,7 @@
               <br />
             </div>
             <div class="group-right">
-              <div>SYMPTOMS of HIV and AIDS</div>
+              <div data-aos="fade-down">SYMPTOMS of HIV and AIDS</div>
             </div>
           </article>
         </div>
@@ -261,7 +264,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#ff436d" fill-opacity="1" d="M0,320L1440,32L1440,320L0,320Z"></path>
     </svg>
-    <section id="conjunction">
+    <section id="conjunction" >
       <h1 class="title-conjunction">
         You can try to consultation and diagnose your problem at the nearest hospital<br />Click link consultation on the Navigation !!!
       </h1>
@@ -269,9 +272,9 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff436d" fill-opacity="1" d="M0,288L1440,64L1440,0L0,0Z"></path></svg>
     <div class="grid-container">
       <section id="diagnosis">
-        <h1>HOW to <span class="blue">DIAGNOSIS</span> <span>HIV and AIDS???</span></h1>
+        <h1 data-aos="fade-down">HOW to <span class="blue">DIAGNOSIS</span> <span>HIV and AIDS???</span></h1>
 
-        <div class="diagnosis-content">
+        <div class="diagnosis-content" data-aos="fade-up">
           <div class="title-diagnosis">HIV can be diagnosed through blood or saliva testing. Available tests include:</div>
           <div class="lists-diagnosis">
             <div class="number-list-diagnosis">01. Antigen/antibody tests.</div>
@@ -310,7 +313,7 @@
       </section>
     </div>
     <div class="quotes">
-      <h1>"The most important thing in illness is never to lose heart."</h1>
+      <h1 data-aos="fade-up" data-aos-anchor-placement="center-center">"The most important thing in illness is never to lose heart."</h1>
     </div>
 
     <!-- footer -->
@@ -363,7 +366,7 @@
         </div>
       </div>
       <div class="end-Footer">
-        <span>2023 Orta Health. All right reserved.</span>
+        2023 Orta Health. All right reserved.
       </div>
     </footer>
 
@@ -512,8 +515,12 @@
       </div>
     </div>
 
-    <script src="../js/navbar.js"></script>
-    <script src="../js/hivaids.js"></script>
-    <script src="../js/overlay.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/hivaids.js"></script>
+    <script src="../assets/js/overlay.js"></script>
   </body>
 </html>

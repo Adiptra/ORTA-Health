@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cholesterol Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,78 +14,75 @@
         href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&family=Roboto:wght@100;300;400;500;700;900&family=Staatliches&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="diabetes.css">
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="hivaids.css">
-    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="../templates/navbar.css">
+    <link rel="stylesheet" href="../templates/layout.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/cholesterol.css">
+    <link rel="stylesheet" href="../templates/footer.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <header>
-            <nav id="navbar">
-                <div class="navbar-container">
-                    <div id="logo">Orta Health</div>
-                    <ul class="ul">
-                        <a href="../index.html">
-                            <li id="li">Discover</li>
-                        </a>
-                        <a href="../hivaids/index.html">
-                            <li id="li">HivAids</li>
-                        </a>
-                        <a href="../diabetes/index.html">
-                            <li id="li">Diabetes</li>
-                        </a>
-                        <a href="../cholesterol/index.html" class="active">
-                            <li id="li">Cholesterol</li>
-                        </a>
-                        <a href="consultation">
-                            <li class="consultation">Consultation</li>
-                        </a>
-                        <div class="ham">
-                            <i class="bx bx-menu"></i>
-                        </div>
-                    </ul>
-                </div>
-            </nav>
-
-            <div class="menu">
-                <ul class="ul">
-                    <a href="discover.html">
-                        <li id="li">Discover</li>
-                    </a>
-                    <a href="#hivaids" class="active">
-                        <li id="li">HivAids</li>
-                    </a>
-                    <a href="diabetes.html">
-                        <li id="li">Diabetes</li>
-                    </a>
-                    <a href="cholesterol.html">
-                        <li id="li">Cholesterol</li>
-                    </a>
-                    <a href="consultation">
-                        <li class="consultation">Consultation</li>
-                    </a>
-                </ul>
+    <header>
+      <nav id="navbar">
+        <div class="navbar-container">
+          <div id="logo">Orta Health</div>
+          <ul class="ul">
+            <a href="../index.html">
+              <li id="li">Discover</li>
+            </a>
+            <a href="../hivaids/index.html">
+              <li id="li">HivAids</li>
+            </a>
+            <a href="../diabetes/index.html">
+              <li id="li">Diabetes</li>
+            </a>
+            <a href="../cholesterol/index.html" class="active">
+              <li id="li">Cholesterol</li>
+            </a>
+            <a onclick="openForm1()" style="cursor: pointer">
+              <li class="consultation">Consultation</li>
+            </a>
+            <div class="ham">
+              <i class="bx bx-menu"></i>
             </div>
+          </ul>
+        </div>
+      </nav>
 
-            <!-- HERO SECTION -->
-            <section id="hero">
-                <h1>
-                    Learn More About <br />
-                    Cholesterol
-                </h1>
-                <p>On this page, we will thoroughly discuss Cholesterol <br />and matters related to Cholesterols
-                    What do you think??</p>
-                <a href="#hero-image">GET STARTED</a>
-            </section>
-            <div class="grid-container">
-                <section id="hero-image">
-                    <h1>ENJOY THE CONTENT</h1>
-                </section>
-            </div>
-        </header>
+      <div class="menu">
+        <ul class="ul">
+          <a href="../index.html" >
+            <li id="li">Discover</li>
+          </a>
+          <a href="../hivaids/index.html">
+            <li id="li">HivAids</li>
+          </a>
+          <a href="../diabetes/index.html">
+            <li id="li">Diabetes</li>
+          </a>
+          <a href="../cholesterol/index.html" class="active">
+            <li id="li">Cholesterol</li>
+          </a>
+          <a onclick="openForm1()" style="cursor: pointer"
+            >
+            <li class="consultation">Consultation</li>
+          </a>
+        </ul>
+      </div>
+
+      <!-- HERO SECTION -->
+      <section id="hero">
+        <h1>Learn More About <br>
+        Cholesterol</h1>
+        <p>
+          On this page, we will throughly discuss Cholesterol <br/>and matters related to Cholesterols <br>
+          What do you think??
+        </p>
+        <a href="#got-bar">GET STARTED</a>
+      </section>
+    </header>
 
 
         <div class="container-all px-[100px] w-full">
@@ -170,7 +167,7 @@
                 <h2 class="text-center font-staatliches text-6xl text-[#282828]">ALRIGHT, <br>
                     WE <span class="text-blue">ALREADY</span> KNOW, <br>
                     WHAT IS <span class="text-primary">CHOLESTEROL</span>. <br>
-                    AND THE NEXT IS ...
+                    AND THE NEXT IS ... 
                     </span>
                 </h2>
             </section>
@@ -240,7 +237,7 @@
                     <div class="upper flex justify-between">
                         <div class="left flex gap-6">
                             <h2 class="text-6xl font-poppins">01</h2>
-                            <img src="../src/diet.jpeg" width="250" alt="">
+                            <img src="src/diet.jpeg" width="250" alt="">
                             <div class="text max-w-[320px]">
                                 <h2 class="font-poppins text-3xl">BAD DIET.</h2>
                                 <p class="">For example consuming too much saturated fat or trans fat. Usually
@@ -334,7 +331,7 @@
                                 blood clots in certain parts of the body, minor strokes, strokes, to heart attacks.</p>
                         </div>
                         <div class="img">
-                            <img src="../src/cholesterol-hero.jpg" class="h-60 ml-16" width="700" alt="">
+                            <img src="src/cholesterol-hero.jpg" class="h-60 ml-16" width="700" alt="">
                         </div>
                     </div>
                 </div>
@@ -500,81 +497,210 @@
                 </h1>
             </section>
         </div>
+    </div>
 
+        <!-- footer -->
         <footer id="foot">
-            <div class="footer flex items-end w-full h-[100vh]">
-                <div
-                    class="foot-container flex justify-evenly bg-[#fbfbfb] pt-5 w-full h-[50vh] border-t border-t-[#BDB8B8] rounded-[10px] flex-wrap">
-                    <div class="foot-logo font-inter text-[#eb236d]">
-                        <h1>Orta Health</h1>
-                        <p>Jln. Juanda 1 No.3</p>
-                        <p>0214-5430-3243-4325</p>
-                    </div>
-                    <div class="features">
-                        <ul>
-                            <li>
-                                <h3 class="font-inter text-[#fa2372]">Features</h3>
-                            </li>
-                            <li><a class="text-[#eb236d] font-lato hover:text-[#6262D3] cursor-pointer" href="">About
-                                    Us</a></li>
-                            <li><a class="text-[#eb236d] font-lato hover:text-[#6262D3] cursor-pointer" href="">News</a>
-                            </li>
-                            <li><a class="text-[#eb236d] font-lato hover:text-[#6262D3] cursor-pointer"
-                                    href="">Articles</a></li>
-                            <li><a class="text-[#eb236d] font-lato hover:text-[#6262D3] cursor-pointer" href="">Tips</a>
-                            </li>
-                            <li><a class="text-[#eb236d] font-lato hover:text-[#6262D3] cursor-pointer"
-                                    href="">Solutions</a></li>
-                            <li><a class="text-[#eb236d] font-lato hover:text-[#6262D3] cursor-pointer"
-                                    href="">Services</a></li>
-                            <li><a class="text-[#eb236d] font-lato hover:text-[#6262D3] cursor-pointer"
-                                    href="">Contact</a></li>
-                            <li><a class="text-[#eb236d] font-lato hover:text-[#6262D3] cursor-pointer"
-                                    href="">Education</a></li>
-                        </ul>
-                    </div>
-                    <div class="social-media">
-                        <ul>
-                            <li>
-                                <h3 class="font-inter text-[#fa2372]">Social Media</h3>
-                            </li>
-                            <li><a class="text-[#eb236d] font-lato hover:text-[#6262D3] cursor-pointer"
-                                    href="">Instagram</a></li>
-                            <li><a class="text-[#eb236d] font-lato hover:text-[#6262D3] cursor-pointer"
-                                    href="">Facebook</a></li>
-                            <li><a class="text-[#eb236d] font-lato hover:text-[#6262D3] cursor-pointer"
-                                    href="">Twitter</a></li>
-                            <li><a class="text-[#eb236d] font-lato hover:text-[#6262D3] cursor-pointer"
-                                    href="">Tiktok</a></li>
-                            <li><a class="text-[#eb236d] font-lato hover:text-[#6262D3] cursor-pointer"
-                                    href="">Whatsapp</a></li>
-                        </ul>
-                    </div>
-                    <div class="legal">
-                        <ul>
-                            <li>
-                                <h3 class="font-inter text-[#fa2372]">Legal</h3>
-                            </li>
-                            <li><a class="text-[#eb236d] font-lato hover:text-[#6262D3] cursor-pointer"
-                                    href="">Terms</a></li>
-                            <li><a class="text-[#eb236d] font-lato hover:text-[#6262D3] cursor-pointer"
-                                    href="">Policy</a></li>
-                            <li><a class="text-[#eb236d] font-lato hover:text-[#6262D3] cursor-pointer"
-                                    href="">Cookies</a></li>
-                        </ul>
-                    </div>
+            <div class="container-foot">
+              <div class="foot-left">
+                <h1>Orta Health</h2>
+                <p class="address">
+                  Jl. Balai Pustaka Baru I No.2, RT.2/RW.7, Rawamangun, Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13220
+                </p>
+                <p class="telp">
+                  +62 85718917735
+                </p>
+              </div>
+              <div class="foot-right">
+                <div class="content-link">
+                  <h3>Features</h3>
+                  <ul class="list-header">
+                    <li class="list"><a href="">About Us</a></li>
+                    <li class="list"><a href="">News</a></li>
+                    <li class="list"><a href="">Articles</a></li>
+                    <li class="list"><a href="">Tips</a></li>
+                    <li class="list"><a href="">Solutions</a></li>
+                    <li class="list"><a href="">Services</a></li>
+                    <li class="list"><a href="">Contact</a></li>
+                    <li class="list"><a href="">Education</a></li>
+                  </ul>
                 </div>
-                <hr class="absolute mb-[40px] bg-[#555555] w-3/4 opacity-50 h-[1px] ml-[125pt] border-none" />
-                <div class="cp mt-10 absolute mb-[15px] ml-[125pt] font-lato text-[#eb236d]">
-                    <h4>2023 Orta Health. All right reserved.</h4>
+                <div class="content-link">
+                  <h3>Social Media</h3>
+                  <ul class="list-header">
+                    <li class="list"><a href="">Instagram</a></li>
+                    <li class="list"><a href="">Facebook</a></li>
+                    <li class="list"><a href="">Twitter</a></li>
+                    <li class="list"><a href="">Tiktok</a></li>
+                    <li class="list"><a href="">Whatsapp</a></li>
+                  </ul>
                 </div>
+                <div class="content-link">
+                  <h3>Legal</h3>
+                  <ul class="list-header">
+                    <li class="list"><a href="">Terms</a></li>
+                    <li class="list"><a href="">Privacy</a></li>
+                    <li class="list"><a href="">Cookies</a></li>
+                    <li class="list"><a href="">Licenses</a></li>
+                    <li class="list"><a href="">Settings</a></li>
+                    <li class="list"><a href="">Policy</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </footer>
+            <div class="end-Footer">
+              <span>2023 Orta Health. All right reserved.</span>
+            </div>
+          </footer>
+
+    <!-- overlay consul -->
+    <div class="overlay" id="myOverlay1">
+      <span class="closebtn" onclick="closeForm1()" title="close overlay">&#215</span>
+      <div class="wrap">
+        <h2></h2>
+        <div class="statement-overlay">
+            <div class="group-text">
+              <div class="title-consultation-diabetes">
+                CONSULTATION
+              </div>
+              <div class="subtitle-consultation">
+                <p>Consultation to Nearest Hospital!!</p>
+                <p>We have a recomendation for you to check your health with the best doctor about Diabetes in your city !!!</p>
+              </div>
+            </div>
+            <div class="fitur-group">
+              <div class="search-group">
+                <input type="text" id="search-consultation" placeholder="ex : DKI JAKARTA"/>
+              </div>
+              <div class="filter-group">
+                <select class="filter-fitur">
+                  <option value="">ALL</option>
+                </select>
+              </div>
+            </div>
+            <div class="group-card-consultation">
+              <div class="card-consultation">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.251191744993!2d106.84529310786286!3d-6.197253032341737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f441e3defea3%3A0x1fc934cbc618b021!2sGedung%20A%20Rumah%20Sakit%20Dr.%20Cipto%20Mangunkusomo%20(RSCM)!5e0!3m2!1sid!2sid!4v1677750959352!5m2!1sid!2sid" width="" height="" style="border:0;" allowfullscreen="" class="img-consultation" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="desc-consultation">
+                  <!-- doctor desc -->
+                  <div class="doctor-bar-group">
+                    <div class="doctor-name">
+                      <div class="title-doctor">Rumah Sakit</div>
+                      <div class="doctor-name">
+                        Dr. Cipto Mangunkusomo 
+                      </div>
+                    </div>
+                  </div>
+    
+    
+                  <!-- telp and location -->
+                  <div class="group-button">
+                    <div class="telp-button">
+                      <i class="fa-solid fa-phone"></i>
+                      <input class="form-copy" id="text-copy1" value="1500135" readonly>
+                      <button class="btn-copy" onclick="copyText1()"><i class="fa-solid fa-clipboard"></i></button>
+                    </div>
+                    <div class="location-button">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <input class="form-copy" id="text-copy-location1" value="Gedung A, Jl. Pangeran Diponegoro No.71, RW.5, Kenari, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10430" readonly>
+                      <button class="btn-copy" onclick="copyTextLocation1()"><i class="fa-solid fa-clipboard"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-consultation">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.735551511674!2d106.913687314007!3d-6.166157662144749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698ad3a9e5df93%3A0xa502e37649e99b8e!2sRumah%20Sakit%20Gading%20Pluit!5e0!3m2!1sid!2sid!4v1677767213389!5m2!1sid!2sid" width="" height="" style="border:0;" class="img-consultation" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="desc-consultation">
+                  <!-- doctor desc -->
+                  <div class="doctor-bar-group">
+                    <div class="doctor-name">
+                      <div class="title-doctor">Rumah Sakit</div>
+                      <div class="doctor-name">
+                        Gading Pluit
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- telp and location -->
+                  <div class="group-button">
+                    <div class="telp-button">
+                      <i class="fa-solid fa-phone"></i>
+                      <input class="form-copy" id="text-copy2" value="0214521001" readonly>
+                      <button class="btn-copy" onclick="copyText2()"><i class="fa-solid fa-clipboard"></i></button>
+                    </div>
+                    <div class="location-button">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <input class="form-copy" id="text-copy-location2" value="Jl. Boulevard Timur, RT.5/RW.2, Pegangsaan Dua, Kec. Klp. Gading, Jkt Utara, Daerah Khusus Ibukota Jakarta 14250" readonly>
+                      <button class="btn-copy" onclick="copyTextLocation2()"><i class="fa-solid fa-clipboard"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="group-card-consultation">
+              <div class="card-consultation">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.223196795362!2d106.88619248304217!3d-6.204696752151275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f49718724acb%3A0xe7d6017f08e37200!2sRumah%20Sakit%20Umum%20Pusat%20(RSUP)%20Persahabatan!5e0!3m2!1sid!2sid!4v1677750459135!5m2!1sid!2sid" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" class="img-consultation" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="desc-consultation">
+                  <!-- doctor desc -->
+                  <div class="doctor-bar-group">
+                    <div class="doctor-name">
+                      <div class="title-doctor">Rumah Sakit Umum Pusat</div>
+                      <div class="doctor-name">
+                        Persahabatan
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- telp and location -->
+                  <div class="group-button">
+                    <div class="telp-button">
+                      <i class="fa-solid fa-phone"></i>
+                      <input class="form-copy" id="text-copy3" value="0214891708" readonly>
+                      <button class="btn-copy" onclick="copyText3()"><i class="fa-solid fa-clipboard"></i></button>
+                    </div>
+                    <div class="location-button">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <input class="form-copy" id="text-copy-location3" value="Jl. Persahabatan Raya No.1, RT.16/RW.13, Pisangan Tim., Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13230" readonly>
+                      <button class="btn-copy" onclick="copyTextLocation3()"><i class="fa-solid fa-clipboard"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-consultation">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.182086017629!2d106.83164201400773!3d-6.2397163628365035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3c3c9e135e3%3A0x1be52c1cc47bd52b!2sRumah%20Sakit%20Medistra!5e0!3m2!1sid!2sid!4v1677767512517!5m2!1sid!2sid" width="" height="" style="border:0;" class="img-consultation" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="desc-consultation">
+                  <!-- doctor desc -->
+                  <div class="doctor-bar-group">
+                    <div class="doctor-name">
+                      <div class="title-doctor">Rumah Sakit</div>
+                      <div class="doctor-name">
+                        Medistra
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- telp and location -->
+                  <div class="group-button">
+                    <div class="telp-button">
+                      <i class="fa-solid fa-phone"></i>
+                      <input class="form-copy" id="text-copy4" value="0215210200" readonly>
+                      <button class="btn-copy" onclick="copyText4()"><i class="fa-solid fa-clipboard"></i></button>
+                    </div>
+                    <div class="location-button">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <input class="form-copy" id="text-copy-location4" value="Jl. Gatot Subroto No.59, RT.1/RW.4, Kuningan Tim., Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12950" readonly>
+                      <button class="btn-copy" onclick="copyTextLocation4()"><i class="fa-solid fa-clipboard"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
     </div>
 </body>
 
-<script src="../js/hivaids.js"></script>
-<script src="../js/navbar.js"></script>
-<script src="../js/overlay.js"></script>
+<script src="../assets/js/hivaids.js"></script>
+<script src="../assets/js/navbar.js"></script>
+<script src="../assets/js/overlay.js"></script>
 
 </html>

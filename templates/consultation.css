@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Lato:wght@300;400&family=Playfair+Display:wght@500&family=Staatliches&display=swap");
+
+:root {
+  --white-color: #fff;
+  --main-color: #ff2052;
+  --grey: #d5caca;
+  --black: #111;
+  --pink: #eb236d;
+  --dark-pink: #fa2372;
+  --transparent-pink: rgba(255, 167, 199, 70%);
+  --blue: #00a3ff;
+
+  /* CONSISTENT FONT FAMILY */
+  --font-Staatliches: "Staatliches", cursive;
+  --font-lato: "Lato";
+  --font-inter: "Inter";
+  --font-playfair: "Playfair Display";
+  --font-bebas: "Bebas Neue", cursive;
+
+  /* CONSISTENT FONT SIZE */
+  --fontsz-96px: 96px; /* FOR OSWALD */
+  --fontsz-60px: 60px; /* FOR INTER */
+  --fontsz-48px: 48px; /* FOR INTER */
+  --fontsz-24px: 24px; /* FOR LATO */
+  --fontsz-20px: 20px; /* FOR LATO */
+  --fontsz-16px: 16px; /* FOR ROBOTO */
+  --fontsz-14px: 14px; /* FOR ROBOTO */
+
+  /* BORDER RADIUS FULL ROUNDED 24px - full*/
+}
+
+
+/* CONSULTATION */
+.consultation-diabetes {
+    overflow-x: hidden;
+    padding: 150px 0;
+  }
+  
+  .title-consultation-diabetes {
+    font-family: var(--font-Staatliches);
+    font-size: 82px;
+    line-height: 95px;
+    color: #ff436d;
+  }
+  
+  .subtitle-consultation {
+    font-size: 18px;
+    line-height: 16px;
+  }
+  
+  #search-consultation {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 7px;
+    border: 1px solid #bbb;
+    margin: 10px 0;
+  }
+  
+  .fitur-group {
+    position: relative;
+  }
+  
+  #search-consultation:focus {
+    border: 1px solid #ff436d;
+    outline: 1px solid #ff436d;
+  }
+  
+  .filter-group {
+    margin-bottom: 65px;
+  }
+  
+  .filter-fitur {
+    padding: 8px 20px;
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 7px;
+    position: absolute;
+    right: 0;
+  }
+  
+  .group-card-consultation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    gap: 30px;
+  }
+  
+  .card-consultation {
+    width: 570px;
+    height: 273px;
+    display: flex;
+    background-color: #71a6ff;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .img-consultation {
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    position: relative;
+  }
+  
+  .img-place-group {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-align: right;
+    color: white;
+  }
+  
+  .hospital-name {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+  }
+  
+  .region-name {
+    font-size: 14px;
+  }
+  
+  .desc-consultation {
+    width: 50%;
+  }
+  .doctor-bar-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .group-button {
+    position: relative;
+    justify-content: start;
+    align-items: end;
+    height: 70%;
+    padding-left: 20px;
+  }
+  .telp-button {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .form-copy {
+    font-family: var(--font-lato);
+    font-size: 16px;
+    width: 150px;
+    border: none;
+    border-bottom: 1px solid #f7fbff;
+    background: transparent;
+    color: var(--white-color);
+  }
+  .form-copy:focus {
+    outline: none;
+  }
+  .btn-copy {
+    background-color: transparent;
+    border: none;
+    border-radius: 100%;
+    height: 40px;
+  }
+  .btn-copy i {
+    width: 40px;
+    height: 40px;
+    background-color: none;
+  }
+  .telp-button i {
+    background-color: var(--main-color);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .telp-button i:hover {
+    background-color: #fff;
+    color: var(--main-color);
+    cursor: pointer;
+  }
+  .location-button {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 60px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .location-button i {
+    background-color: #fff;
+    color: var(--main-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .location-button i:hover {
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+  }
+  .title-doctor {
+    font-family: var(--font-inter);
+    font-size: 16px;
+    color: #fff;
+  }
+  .doctor-name {
+    font-family: var(--font-inter);
+    font-size: var(--fontsz-14px);
+    line-height: 20px;
+    color: #fff;
+  }
+  
+  /* End of Consultation diabetes */
+
+  @media only screen and (max-width: 600px){
+    /* consul */
+  .group-card-consultation {
+    flex-direction: column;
+  }
+  .title-consultation-diabetes {
+    font-size: var(--fontsz-48px);
+    line-height: 40px;
+  }
+  .card-consultation {
+    width: 100%;
+    height: 190px;
+  }
+  .subtitle-consultation {
+    margin-top: 20px;
+  }
+  .location-button i {
+    display: none;
+  }
+  .telp-button i {
+    display: none;
+  }
+  .form-copy {
+    display: none;
+  }
+
+    /* overlay */
+    .overlay {
+      width: 393px;
+    }
+  }

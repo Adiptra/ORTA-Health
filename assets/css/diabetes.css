@@ -35,10 +35,72 @@ body {
   margin: 0;
   background-color: #f7fbff;
 }
+#hero {
+  width: 100%;
+  height: 80vh;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 150px;
+  color: var(--primary-white);
+  transition: all ease 0.5s;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../images/8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero h1 {
+  width: 900px;
+  font-family: var(--font-staatliches);
+  font-size: 82px;
+}
+
+#hero p {
+  width: 700px;
+}
+
+#hero a {
+  margin-top: 20px;
+  padding: 10px 24px;
+  background-color: var(--secondary-red);
+  border-radius: 4px;
+  color: var(--primary-white);
+  transition: all ease 0.5s;
+}
+#hero a:hover {
+  background-color: var(--primary-red);
+  color: var(--sixth-black);
+  transform: translateY(3px);
+}
+
+/* HERO IMAGE */
+#hero-image {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/9.png);
+  background-repeat: no-repeat;
+  background-size: 149%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 100px 0;
+}
+
+#hero-image h1 {
+  font-family: var(--font-redhat);
+  font-size: 72px;
+  color: var(--primary-white);
+}
 
 /* Statement Page */
 #statement {
   padding: 150px 0;
+  overflow-x: hidden;
 }
 .container-statement {
   display: flex;
@@ -110,6 +172,7 @@ body {
 /* Caused Page */
 #caused {
   padding: 150px 0;
+  overflow-x: hidden;
 }
 .container-caused {
   display: flex;
@@ -137,7 +200,7 @@ body {
 .image-caused {
   width: 100%;
   height: 220px;
-  background-image: url("img/gambarJantung.jpg");
+  background-image: url("../images/gambarJantung.jpg");
   background-size: 100%;
   background-position-y: center;
   background-repeat: no-repeat;
@@ -164,7 +227,8 @@ body {
 
 /* Risks Page */
 #risks {
-  padding: 150px 100px;
+  padding: 150px 0;
+  overflow-x: hidden;
 }
 .container-risk {
   display: flex;
@@ -177,7 +241,7 @@ body {
 .risk-image1 {
   width: 100%;
   height: 30vh;
-  background-image: url(img/gambarKesehatan1.jpg);
+  background-image: url(../images/gambarKesehatan1.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -186,7 +250,7 @@ body {
 .risk-image2 {
   width: 203px;
   height: 472px;
-  background-image: url(img/gambarKesehatan5.jfif);
+  background-image: url(../images/gambarKesehatan5.jfif);
   background-repeat: no-repeat;
   background-position: top;
   border-radius: 10px;
@@ -237,8 +301,9 @@ body {
 }
 /* End Risks */
 
-/* Symtoms Page */
+/* Symptoms Page */
 #symptoms {
+  overflow-x: hidden;
   display: flex;
   padding: 150px 0;
   justify-content: space-between;
@@ -250,7 +315,7 @@ body {
   width: 203px;
   height: 462px;
   background-size: 200%;
-  background-image: url(img/gambarKesehatan6.jfif);
+  background-image: url(../images/gambarKesehatan6.jfif);
   background-repeat: no-repeat;
   border-radius: 10px;
   background-position: center;
@@ -303,215 +368,19 @@ body {
 .symptoms-left-img {
   width: 100%;
   height: 170px;
-  background-image: url(img/gambarKesehatan2.jpg);
+  background-image: url(../images/gambarKesehatan2.jpg);
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
   margin-top: 5px;
 }
 
-/* CONSULTATION */
-.consultation-diabetes {
-  padding: 150px 0;
-}
-
-.title-consultation-diabetes {
-  font-family: var(--font-Staatliches);
-  font-size: 82px;
-  line-height: 95px;
-  color: #ff436d;
-}
-
-.subtitle-consultation {
-  font-size: 18px;
-  line-height: 16px;
-}
-
-#search-consultation {
-  width: 100%;
-  padding: 12px 20px;
-  font-size: 18px;
-  border-radius: 7px;
-  border: 1px solid #bbb;
-  margin: 10px 0;
-}
-
-.fitur-group {
-  position: relative;
-}
-
-#search-consultation:focus {
-  border: 1px solid #ff436d;
-  outline: 1px solid #ff436d;
-}
-
-.filter-group {
-  margin-bottom: 65px;
-}
-
-.filter-fitur {
-  padding: 8px 20px;
-  background: #ffffff;
-  border: 1px solid #bbbbbb;
-  border-radius: 7px;
-  position: absolute;
-  right: 0;
-}
-
-.group-card-consultation {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
-  gap: 30px;
-}
-
-.card-consultation {
-  width: 570px;
-  height: 273px;
-  display: flex;
-  background-color: #71a6ff;
-  border-radius: 10px;
-  margin-bottom: 12px;
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
-}
-
-.img-consultation {
-  width: 50%;
-  border-radius: 10px 0 0 10px;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: bottom;
-  position: relative;
-}
-
-.img-place-group {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  text-align: right;
-  color: white;
-}
-
-.hospital-name {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
-}
-
-.region-name {
-  font-size: 14px;
-}
-
-.desc-consultation {
-  width: 50%;
-}
-.doctor-bar-group {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-.group-button {
-  position: relative;
-  justify-content: start;
-  align-items: end;
-  height: 70%;
-  padding-left: 20px;
-}
-.telp-button {
-  margin-right: 10px;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  width: 90%;
-  justify-content: space-between;
-  align-items: center;
-}
-.form-copy {
-  font-family: var(--font-lato);
-  font-size: 16px;
-  width: 150px;
-  border: none;
-  border-bottom: 1px solid #f7fbff;
-  background: transparent;
-  color: var(--white-color);
-}
-.form-copy:focus {
-  outline: none;
-}
-.btn-copy {
-  background-color: transparent;
-  border: none;
-  border-radius: 100%;
-  height: 40px;
-}
-.btn-copy i {
-  width: 40px;
-  height: 40px;
-  background-color: none;
-}
-.telp-button i {
-  background-color: var(--main-color);
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.telp-button i:hover {
-  background-color: #fff;
-  color: var(--main-color);
-  cursor: pointer;
-}
-.location-button {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  bottom: 60px;
-  display: flex;
-  width: 90%;
-  justify-content: space-between;
-  align-items: center;
-}
-.location-button i {
-  background-color: #fff;
-  color: var(--main-color);
-  width: 40px;
-  height: 40px;
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.location-button i:hover {
-  background-color: var(--main-color);
-  color: #fff;
-  cursor: pointer;
-}
-.title-doctor {
-  font-family: var(--font-inter);
-  font-size: 16px;
-  color: #fff;
-}
-.doctor-name {
-  font-family: var(--font-inter);
-  font-size: var(--fontsz-14px);
-  line-height: 20px;
-  color: #fff;
-}
-
-/* End of Consultation diabetes */
 
 /* Tips Page */
 #tips {
   padding: 150px 0;
+  overflow-x: hidden;
 }
 .header-tips {
   text-align: center;
@@ -535,7 +404,7 @@ body {
   margin-bottom: 20px;
 }
 .img-step1 {
-  background-image: url(img/exercise.svg);
+  background-image: url(../images/exercise.svg);
   width: 45%;
   height: 35vh;
   background-size: 50%;
@@ -545,7 +414,7 @@ body {
   border-radius: 10px;
 }
 .img-step2 {
-  background-image: url(img/healthy.svg);
+  background-image: url(../images/healthy.svg);
   width: 45%;
   height: 35vh;
   background-size: 50%;
@@ -555,7 +424,7 @@ body {
   border-radius: 10px;
 }
 .img-step3 {
-  background-image: url(img/drink.svg);
+  background-image: url(../images/drink.svg);
   width: 45%;
   height: 35vh;
   background-size: 40%;
@@ -638,84 +507,6 @@ body {
   }
 }
 
-/* Footer */
-#footer {
-  padding: 100px 100px 0 100px;
-  background-color: var(--white-color);
-  border: 1px solid #e6e6e6;
-}
-.container-footer {
-  width: 100%;
-  height: 60vh;
-}
-.list::before {
-  content: none;
-  display: none;
-  height: 0;
-  width: 0;
-  background-size: 0;
-  background-image: none;
-  margin-right: 0;
-}
-.list a {
-  font-family: var(--font-lato);
-  font-size: var(--fontsz-20px);
-  font-weight: 300;
-  text-decoration: none;
-  color: var(--main-color);
-}
-.list-header {
-  line-height: 40px;
-}
-.container-footer {
-  display: flex;
-  justify-content: space-between;
-  color: var(--main-color);
-}
-.header-left {
-  width: 466px;
-  line-height: 39px;
-}
-.header-left h1 {
-  font-family: var(--font-inter);
-  font-size: 32px;
-  font-weight: 600;
-  color: var(--main-color);
-}
-.address {
-  font-family: var(--font-lato);
-  font-size: var(--fontsz-16px);
-  font-weight: 300;
-  line-height: normal;
-}
-.content-right-group {
-  display: flex;
-  justify-content: space-evenly;
-  width: 564px;
-  height: 100%;
-}
-.content-navigation h3 {
-  margin-left: 30px;
-  font-family: var(--font-inter);
-  font-size: var(--fontsz-24px);
-  font-weight: 600;
-}
-.end-Footer {
-  display: flex;
-  justify-content: center;
-  height: 10vh;
-  width: 100%;
-}
-.end-Footer span {
-  width: 100%;
-  background-color: #e6e6e6;
-  height: 1px;
-  font-size: 20px;
-  font-family: var(--font-inter);
-  font-weight: 400;
-  color: var(--main-color);
-}
-
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -744,6 +535,8 @@ body {
 }
 .wrap h2 {
   font-size: var(--fontsz-24px);
+  color: #fa2372;
+  font-family: var(--font-Staatliches);
 }
 .openbtn {
   background: var(--putih);
@@ -781,4 +574,386 @@ body {
 
 .closebtn:hover {
   color: #ccc;
+}
+
+@media only screen and (max-width: 600px) {
+  /* statement */
+  #statement {
+    padding: 100px 0;
+  }
+  .container-statement {
+    display: block;
+  }
+  .title-statement h2 {
+    font-size: 50px;
+  }
+  .subtitle-statement {
+    width: 100%;
+  }
+  .label-statement {
+    margin-left: 100px;
+    transform: translateY(-100px);
+  }
+  .ask-statement {
+    display: none;
+  }
+  /* Caused */
+  #caused {
+    padding: 100px 0;
+  }
+  .container-caused {
+    display: block;
+  }
+  .caused-words {
+    width: 100%;
+    text-align: center;
+  }
+  .caused-words h4 {
+    width: 100%;
+    font-size: 24px;
+    line-height: 20px;
+  }
+  .diabetes-type {
+    display: block;
+  }
+  .diabetes-type-content {
+    width: 100%;
+  }
+
+  /* risk */
+  #risks {
+    padding: 100px 0;
+  }
+  .container-risk {
+    display: block;
+    position: relative;
+  }
+  .risk-type-parent {
+    display: block;
+  }
+  .risk-right {
+    width: 100%;
+    padding-top: 220px;
+  }
+  .risk-image1 {
+    background-size: auto;
+  }
+  .risk-type-child {
+    width: 100%;
+  }
+  ul li::before {
+    width: 20px;
+    height: 15px;
+  }
+  ul li {
+    font-size: 20px;
+  }
+  .risk-type-child h4 {
+    font-size: var(--fontsz-24px);
+  }
+  .risk-statement {
+    width: 100%;
+  }
+  .risk-statement h1 {
+    position: absolute;
+    top: 0px;
+  }
+  .risk-left {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+  }
+  .risk-statement .statement-top {
+    font-size: 20px;
+    position: absolute;
+    top: 70px;
+    line-height: 20px;
+  }
+  .risk-statement-bottom h4 {
+    font-size: 24px;
+  }
+  .risk-statement-bottom p {
+    font-size: 18px;
+  }
+  .risk-image2 {
+    display: none;
+  }
+
+  /* symptoms */
+  #symptoms {
+    display: block;
+  }
+  .container-symptoms {
+    width: 100%;
+  }
+  .symptoms-left {
+    display: block;
+  }
+  .symptoms-statement {
+    display: block;
+  }
+  .symptoms-type {
+    width: 100%;
+  }
+  .header-symptoms {
+    width: 100%;
+  }
+  .symptoms-type ul li,
+  .symptoms-several ul li {
+    list-style: circle;
+  }
+  .symptoms-type h4 {
+    font-size: var(--fontsz-20px);
+    margin-top: 20px;
+  }
+  .symptoms-several h4 {
+    font-size: var(--fontsz-20px);
+    margin-top: 20px;
+  }
+  .symptoms-right-img {
+    display: none;
+  }
+
+  /* consul */
+  .group-card-consultation {
+    flex-direction: column;
+  }
+  .title-consultation-diabetes {
+    font-size: var(--fontsz-48px);
+    line-height: 40px;
+  }
+  .card-consultation {
+    width: 100%;
+    height: 190px;
+  }
+  .subtitle-consultation {
+    margin-top: 20px;
+  }
+  .location-button i {
+    display: none;
+  }
+  .telp-button i {
+    display: none;
+  }
+  .form-copy {
+    display: none;
+  }
+
+  /* tips */
+  .header-tips h1 {
+    font-size: var(--fontsz-48px);
+  }
+  .step-tips {
+    display: block;
+  }
+  .img-step1 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .img-step2 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .img-step3 {
+    width: 100%;
+    margin-bottom: 30px;
+    background-size: 50%;
+  }
+  .step-group {
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1024) {
+  /* statement */
+  #statement {
+    padding: 100px 0;
+  }
+  .container-statement {
+    display: block;
+  }
+  .title-statement h2 {
+    font-size: 50px;
+  }
+  .subtitle-statement {
+    width: 100%;
+  }
+  .label-statement {
+    margin-left: 100px;
+    transform: translateY(-100px);
+  }
+  .ask-statement {
+    display: none;
+  }
+  /* Caused */
+  #caused {
+    padding: 100px 0;
+  }
+  .container-caused {
+    display: block;
+  }
+  .caused-words {
+    width: 100%;
+    text-align: center;
+  }
+  .caused-words h4 {
+    width: 100%;
+    font-size: 24px;
+    line-height: 20px;
+  }
+  .diabetes-type {
+    display: block;
+  }
+  .diabetes-type-content {
+    width: 100%;
+  }
+
+  /* risk */
+  #risks {
+    padding: 100px 0;
+  }
+  .container-risk {
+    display: block;
+    position: relative;
+  }
+  .risk-type-parent {
+    display: block;
+  }
+  .risk-right {
+    width: 100%;
+    padding-top: 220px;
+  }
+  .risk-image1 {
+    background-size: auto;
+  }
+  .risk-type-child {
+    width: 100%;
+  }
+  ul li::before {
+    width: 20px;
+    height: 15px;
+  }
+  ul li {
+    font-size: 20px;
+  }
+  .risk-type-child h4 {
+    font-size: var(--fontsz-24px);
+  }
+  .risk-statement {
+    width: 100%;
+  }
+  .risk-statement h1 {
+    position: absolute;
+    top: 0px;
+  }
+  .risk-left {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+  }
+  .risk-statement .statement-top {
+    font-size: 20px;
+    position: absolute;
+    top: 70px;
+    line-height: 20px;
+  }
+  .risk-statement-bottom h4 {
+    font-size: 24px;
+  }
+  .risk-statement-bottom p {
+    font-size: 18px;
+  }
+  .risk-image2 {
+    display: none;
+  }
+
+  /* symptoms */
+  #symptoms {
+    display: block;
+  }
+  .container-symptoms {
+    width: 100%;
+  }
+  .symptoms-left {
+    display: block;
+  }
+  .symptoms-statement {
+    display: block;
+  }
+  .symptoms-type {
+    width: 100%;
+  }
+  .header-symptoms {
+    width: 100%;
+  }
+  .symptoms-type ul li,
+  .symptoms-several ul li {
+    list-style: circle;
+  }
+  .symptoms-type h4 {
+    font-size: var(--fontsz-20px);
+    margin-top: 20px;
+  }
+  .symptoms-several h4 {
+    font-size: var(--fontsz-20px);
+    margin-top: 20px;
+  }
+  .symptoms-right-img {
+    height: 100%;
+    background-image: none;
+  }
+
+  /* consul */
+  .group-card-consultation {
+    flex-direction: column;
+  }
+  .title-consultation-diabetes {
+    font-size: var(--fontsz-48px);
+    line-height: 40px;
+  }
+  .card-consultation {
+    width: 100%;
+    height: 190px;
+  }
+  .subtitle-consultation {
+    margin-top: 20px;
+  }
+  .location-button i {
+    display: none;
+  }
+  .telp-button i {
+    display: none;
+  }
+  .form-copy {
+    display: none;
+  }
+
+  /* tips */
+  .header-tips h1 {
+    font-size: var(--fontsz-48px);
+  }
+  .step-tips {
+    display: block;
+  }
+  .img-step1 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .img-step2 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .img-step3 {
+    width: 100%;
+    margin-bottom: 30px;
+    background-size: 50%;
+  }
+  .step-group {
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
 }

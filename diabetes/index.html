@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/navbar.css" />
-    <link rel="stylesheet" href="../css/layout.css" />
-    <link rel="stylesheet" href="../css/diabetes.css" />
-    <!-- <link rel="stylesheet" href="../css/hivaids.css" /> -->
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../templates/navbar.css" />
+    <link rel="stylesheet" href="../templates/layout.css" />
+    <link rel="stylesheet" href="../templates/footer.css" />
+    <link rel="stylesheet" href="../assets/css/diabetes.css" />
+    <link rel="stylesheet" href="../templates/consultation.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <title>Diabetes | Orta</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -63,12 +65,12 @@
 
       <!-- HERO SECTION -->
       <section id="hero">
-        <h1>
+        <h1  data-aos="fade-up" data-aos-duration="1000">
           Learn More About <br />
           Diabetes
         </h1>
-        <p>On this page, we will discuss about Diabetes <br />and matters related to Diabetes. What do you think??</p>
-        <a href="#hero-image">GET STARTED</a>
+        <p  data-aos="fade-up" data-aos-duration="1000">On this page, we will discuss about Diabetes <br />and matters related to Diabetes. What do you think??</p>
+        <a href="#hero-image"  data-aos="fade-up">GET STARTED</a>
       </section>
       <div class="grid-container">
         <section id="hero-image">
@@ -82,8 +84,8 @@
       <!-- Statement Page -->
       <section id="statement">
         <div class="container-statement">
-            <div class="title-statement">
-                <h2>BEFORE WE GO DEEPER
+            <div class="title-statement" data-aos="fade-right" data-aos-duration="1000">
+                <h2 data-aos="fade-right">BEFORE WE GO DEEPER
                     <br/>
                     INTO THIS WEBSITE, 
                     <br/>
@@ -94,56 +96,8 @@
                 <div class="label-statement">
                     <h4 class="openbtn" onclick="openForm()">READ MORE? CLICK ME!!</h4>
                 </div>
-                <div class="overlay" id="myOverlay">
-                  <span class="closebtn" onclick="closeForm()" title="close overlay">&#215</span>
-                  <div class="wrap">
-                    <h2>WHAT DIABETES IS???</h2>
-                    <div class="statement-overlay">
-                      Diabetes is a chronic disease characterized by high blood sugar levels. Glucose is the main source of energy for human body cells. However, in diabetics, the body cannot use glucose.
-                      <br>
-                      <br> 
-                      The level of sugar (glucose) in the blood is controlled by the hormone insulin, which is produced by the pancreas. However, in diabetics, the pancreas is unable to produce insulin according to the body's needs. Without insulin, the body's cells cannot absorb and process glucose into energy.
-                      <br>
-                      <br>
-                      Currently there are around 150 million people who have diabetes worldwide.
-                      Most sufferers only become aware of their diabetes after serious complications such as eye problems or kidney problems arise.
-                      <br>
-                      <br>
-                    </div>
-                    <h2>TYPE OF DIABETES</h2>
-                    <div class="statement-overlay">
-                      <ul>
-                        <li>Type 1 Diabetes
-                          <br>
-                          Type 1 diabetes occurs when the body's immune system mistakenly attacks and destroys the insulin-producing cells of the pancreas. This causes blood glucose levels to increase thereby triggering damage to the organs of the body.
-                          <br>
-                          Type 1 diabetes is also known as autoimmune diabetes. The cause of type 1 diabetes is still not known with certainty. However, there are suspicions that this disease is related to genetic factors and environmental factors.
-                        </li>
-                      </ul>
-                      <ul>
-                        <br>
-                        <li>Type 2 Diabetes
-                          <br>
-                          Type 2 diabetes is the most common type of diabetes, which is around 90–95%. Type 2 diabetes occurs when the body's cells become less sensitive to insulin so that the insulin they produce cannot be used properly. This condition is also known as insulin resistance.
-                          <br>
-                          In addition to these two types of diabetes, there is a type of diabetes that usually occurs in pregnant women, namely gestational diabetes. This type of diabetes is caused by hormonal changes during pregnancy, but usually the patient's blood sugar will return to normal after delivery.
-                        </li>
-                      </ul>
-                      <div class="chartMenu">
-                          <p>Vulnerable Data Age Affected Type 1 & 2 Diabetes</p>
-                      </div>
-                      <div class="chartCard">
-                          <div class="chartBox">
-                              <canvas id="doughnut"></canvas>
-                          </div>
-                      </div>
-                      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
-                      <script src="../js/chartType.js"></script>
-                    </div>
-                  </div>
-                </div>
             </div>
-            <div class="subtitle-statement">
+            <div class="subtitle-statement" data-aos="fade-left" data-aos-duration="1000">
                 <p>
                     Diabetes is a chronic disease characterized by high blood sugar levels. Glucose is the main source of energy for human body cells. However, in diabetics, the body cannot use glucose.
                     <br>
@@ -153,24 +107,72 @@
             </div>
         </div>
         <div class="ask-statement">
-            <h4>EASY TO UNDERSTAND RIGHT ??</h4>
-            <h4><a href="#caused">WHAT'S NEXT ??</a></h4>
+            <h4 data-aos="fade-right">EASY TO UNDERSTAND RIGHT ??</h4>
+            <h4 data-aos="fade-left"><a href="#caused">WHAT'S NEXT ??</a></h4>
         </div>
       </section>  
       <div class="end-Line">
         <span></span>
       </div>
       <!-- End of Statement Page -->
+      <div class="overlay" id="myOverlay">
+        <span class="closebtn" onclick="closeForm()" title="close overlay">&#215</span>
+        <div class="wrap">
+          <h2>WHAT DIABETES IS???</h2>
+          <div class="statement-overlay">
+            Diabetes is a chronic disease characterized by high blood sugar levels. Glucose is the main source of energy for human body cells. However, in diabetics, the body cannot use glucose.
+            <br>
+            <br> 
+            The level of sugar (glucose) in the blood is controlled by the hormone insulin, which is produced by the pancreas. However, in diabetics, the pancreas is unable to produce insulin according to the body's needs. Without insulin, the body's cells cannot absorb and process glucose into energy.
+            <br>
+            <br>
+            Currently there are around 150 million people who have diabetes worldwide.
+            Most sufferers only become aware of their diabetes after serious complications such as eye problems or kidney problems arise.
+            <br>
+            <br>
+          </div>
+          <h2>TYPE OF DIABETES</h2>
+          <div class="statement-overlay">
+            <ul>
+              <li>Type 1 Diabetes
+                <br>
+                Type 1 diabetes occurs when the body's immune system mistakenly attacks and destroys the insulin-producing cells of the pancreas. This causes blood glucose levels to increase thereby triggering damage to the organs of the body.
+                <br>
+                Type 1 diabetes is also known as autoimmune diabetes. The cause of type 1 diabetes is still not known with certainty. However, there are suspicions that this disease is related to genetic factors and environmental factors.
+              </li>
+            </ul>
+            <ul>
+              <br>
+              <li>Type 2 Diabetes
+                <br>
+                Type 2 diabetes is the most common type of diabetes, which is around 90–95%. Type 2 diabetes occurs when the body's cells become less sensitive to insulin so that the insulin they produce cannot be used properly. This condition is also known as insulin resistance.
+                <br>
+                In addition to these two types of diabetes, there is a type of diabetes that usually occurs in pregnant women, namely gestational diabetes. This type of diabetes is caused by hormonal changes during pregnancy, but usually the patient's blood sugar will return to normal after delivery.
+              </li>
+            </ul>
+            <div class="chartMenu">
+                <p>Vulnerable Data Age Affected Type 1 & 2 Diabetes</p>
+            </div>
+            <div class="chartCard">
+                <div class="chartBox">
+                    <canvas id="doughnut"></canvas>
+                </div>
+            </div>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+            <script src="../assets/js/chartType.js"></script>
+          </div>
+        </div>
+      </div>
       <!-- Caused Page -->
       <section id="caused">
         <div class="container-caused">
-            <div class="caused-words">
+            <div class="caused-words" data-aos="fade-right" data-aos-duration="1000">
                 <h4>after that, we will go into more specifically about diabetes</h4>
             </div>
             <div class="caused-content">
-                <h1>CAUSED</h1>
-                <div class="image-caused"></div>
-                <div class="diabetes-type">
+                <h1 data-aos="fade-left">CAUSED</h1>
+                <div class="image-caused" data-aos="fade-up"></div>
+                <div class="diabetes-type" data-aos="fade-up">
                     <div class="diabetes-type-content">
                         <h4>DIABETES TYPE I</h4>
                         <p>Type 1 diabetes occurs when the body's immune system mistakenly attacks and destroys the insulin-producing cells of the pancreas. This causes blood glucose levels to increase thereby triggering damage to the organs of the body. 
@@ -197,11 +199,11 @@
       <section id="risks">
         <div class="container-risk">
             <div class="risk-right">
-                <div class="risk-image1"></div>
+                <div class="risk-image1" data-aos="fade-right"></div>
                 <div class="risk-type-parent">
                     <div class="risk-type-child">
-                        <h4>RISK FACTORS <span class="for-color">FOR TYPE I DIABETES</span></h4>
-                        <ul>
+                        <h4 data-aos="fade-right">RISK FACTORS <span class="for-color">FOR TYPE I DIABETES</span></h4>
+                        <ul data-aos="fade-down">
                             <li>4–7 years old or 10–14 years old</li>
                             <li>Have a family history of type 1 diabetes</li>
                             <li>Suffer from a disease caused by a viral infection</li>
@@ -210,8 +212,8 @@
                         </ul>
                     </div>
                     <div class="risk-type-child">
-                        <h4>RISK FACTORS <span class="for-color">FOR TYPE II DIABETES</span></h4>
-                        <ul>
+                        <h4 data-aos="fade-left">RISK FACTORS <span class="for-color">FOR TYPE II DIABETES</span></h4>
+                        <ul data-aos="fade-down">
                             <li>Over 45 years old</li>
                             <li>Have a family history of type 2 diabetes</li>
                             <li>Rarely do physical activity or exercise</li>
@@ -225,18 +227,18 @@
             </div>
             <div class="risk-left">
                 <div class="risk-statement">
-                    <h1>RISKS</h1>
-                    <p class="statement-top">
+                    <h1 data-aos="fade-left">RISKS</h1>
+                    <p class="statement-top" data-aos="fade-left">
                         In general, diabetes is divided into two types, namely type 1 and type 2 diabetes. Type 1 diabetes occurs when the patient's immune system attacks and destroys the pancreatic cells that produce insulin. This is what causes an increase in blood glucose levels, resulting in damage to the organs of the body.
                     </p>
                     <div class="risk-statement-bottom">
-                        <h4>MORE <span class="for-color">RISK</span></h4>
-                        <p>
+                        <h4 data-aos="fade-right">MORE <span class="for-color">RISK</span></h4>
+                        <p data-aos="fade-down">
                             Especially for women, pregnant women who suffer from gestational diabetes can more easily develop type 2 diabetes. In addition, women who have a history of polycystic ovarian syndrome (PCOS) are also more prone to developing type 2 diabetes.
                         </p>
                     </div>
                 </div>
-                <div class="risk-image2"></div>
+                <div class="risk-image2" data-aos="fade-up"></div>
             </div>
         </div>
       </section>
@@ -249,15 +251,15 @@
         <div class="container-symptoms">
           <div class="symptoms-left">
             <div class="header-symptoms">
-              <h1>SYMPTOMS OF DIABETES</h1>
-              <p>
+              <h1 data-aos="fade-right">SYMPTOMS OF DIABETES</h1>
+              <p data-aos="fade-left">
                 Type 1 diabetes can develop rapidly within weeks or even days. Whereas in type 2 diabetes, many sufferers do not realize that they have had diabetes for years, because the symptoms tend to be non-specific.
               </p>
             </div>
             <div class="symptoms-statement">
               <div class="symptoms-type">
-                <h4>SYMPTOMS <span class="for-color">for type 2 diabetes</span></h4>
-                <ul>
+                <h4 data-aos="fade-right">SYMPTOMS <span class="for-color">for type 2 diabetes</span></h4>
+                <ul data-aos="fade-down">
                   <li>Often feeling thirsty or very hungry</li>
                   <li>Frequent urination, especially at night</li>
                   <li>Weight loss for no apparent reason</li>
@@ -268,8 +270,8 @@
                 </ul>
               </div>
               <div class="symptoms-several">
-                <h4><span class="for-color">In addition, there are several other</span>  symptoms <span class="for-color">that can also be experienced by</span>  diabetics<span class="for-color">, including :</span></h4>
-                <ul>
+                <h4 data-aos="fade-left"><span class="for-color">In addition, there are several other</span>  symptoms <span class="for-color">that can also be experienced by</span>  diabetics<span class="for-color">, including :</span></h4>
+                <ul data-aos="fade-down">
                   <li>Dry mouth</li>
                   <li>Itching of the skin or prurigo occurs</li>
                   <li>Erectile dysfunction or impotence</li>
@@ -280,9 +282,9 @@
               </div>
             </div>
           </div>
-          <div class="symptoms-left-img"></div>
+          <div class="symptoms-left-img" data-aos="fade-left"></div>
         </div>
-        <div class="symptoms-right-img"></div>
+        <div class="symptoms-right-img" data-aos="fade-up"></div>
       </section>
       <div class="end-Line">
         <span></span>
@@ -292,25 +294,25 @@
       <!-- consultation diabetes -->
       <section class="consultation-diabetes">
         <div class="group-text">
-          <div class="title-consultation-diabetes">
+          <div class="title-consultation-diabetes" data-aos="fade-up">
             CONSULTATION DIABETES
           </div>
-          <div class="subtitle-consultation">
+          <div class="subtitle-consultation" data-aos="fade-up">
             <p>Consultation to Nearest Hospital!!</p>
             <p>We have a recomendation for you to check your health with the best doctor about Diabetes in your city !!!</p>
           </div>
         </div>
         <div class="fitur-group">
-          <div class="search-group">
+          <div class="search-group" data-aos="fade-left" data-aos-duration="1000">
             <input type="text" id="search-consultation" placeholder="ex : DKI JAKARTA"/>
           </div>
           <div class="filter-group">
-            <select class="filter-fitur">
+            <select class="filter-fitur" data-aos="fade-right">
               <option value="">ALL</option>
             </select>
           </div>
         </div>
-        <div class="group-card-consultation">
+        <div class="group-card-consultation" data-aos="fade-right">
           <div class="card-consultation">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.251191744993!2d106.84529310786286!3d-6.197253032341737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f441e3defea3%3A0x1fc934cbc618b021!2sGedung%20A%20Rumah%20Sakit%20Dr.%20Cipto%20Mangunkusomo%20(RSCM)!5e0!3m2!1sid!2sid!4v1677750959352!5m2!1sid!2sid" width="" height="" style="border:0;" allowfullscreen="" class="img-consultation" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="desc-consultation">
@@ -369,7 +371,7 @@
             </div>
           </div>
         </div>
-        <div class="group-card-consultation">
+        <div class="group-card-consultation" data-aos="fade-left">
           <div class="card-consultation">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.223196795362!2d106.88619248304217!3d-6.204696752151275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f49718724acb%3A0xe7d6017f08e37200!2sRumah%20Sakit%20Umum%20Pusat%20(RSUP)%20Persahabatan!5e0!3m2!1sid!2sid!4v1677750459135!5m2!1sid!2sid" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" class="img-consultation" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="desc-consultation">
@@ -437,14 +439,14 @@
 
       <section id="tips">
         <div class="container-tips">
-          <div class="header-tips">
+          <div class="header-tips" data-aos="zoom-in">
             <h1>Here are some tips that you can 
               <br/>
               do to prevent DIABETES</h1>
             <p>We hope these tips can help you</p>
           </div>
           <div class="content-tips">
-            <div class="step-tips">
+            <div class="step-tips" data-aos="fade-left">
               <div class="img-step1"></div>
               <div class="step-group">
                 <div class="step-header">
@@ -461,7 +463,7 @@
                 </div>
               </div>
             </div>
-            <div class="step-tips">
+            <div class="step-tips" data-aos="fade-right">
               <div class="img-step2"></div>
               <div class="step-group">
                 <div class="step-header">
@@ -478,7 +480,7 @@
                 </div>
               </div>
             </div>
-            <div class="step-tips">
+            <div class="step-tips" data-aos="fade-left">
               <div class="img-step3"></div>
               <div class="step-group">
                 <div class="step-header">
@@ -701,10 +703,12 @@
             </div>
       </div>
     </div>
-    
-    <script src="../js/navbar.js"></script>
-    <script src="../js/hivaids.js"></script>
-    <script src="../js/overlay.js"></script>
-    <script src="../js/overlay.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/overlay.js"></script>
   </body>
 </html>
